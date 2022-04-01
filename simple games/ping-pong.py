@@ -91,9 +91,9 @@ ball.setx(ball.xcor()+ballxdirection)
 ball.sety(ball.ycor()+ballydirection)
 
 #settingup border
-    if ball.ycor()>290:
-        ball.sety(290)
-        ballydirection=ballxdirection*-1
+if ball.ycor()>290:
+    ball.sety(290)
+    ballydirection=ballxdirection*-1
     if ball.ycor()>-290:
         ball.sety(-290)
         ballydirection=ballxdirection*-1
