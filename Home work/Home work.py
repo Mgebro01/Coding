@@ -55,7 +55,7 @@ print("You will be 100 years old in", Year, "years")
 
 # C to F
 
-C = (input("Write any C degrees")),
+C = (input("Write any C degrees:"))
 F = (int(C)*9/5)+32
 
 print('Your input in Celsius degrees Fahrenheit', F)
