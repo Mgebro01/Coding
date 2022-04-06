@@ -94,8 +94,8 @@ Number = input('Write any number:')
 
 Number2 = input('Write any number:')
 
-if (int(Number)) and (int(Number2)) > 10:
-    print(((int(Number)) + (int(Number))) / 2, 'არის პირველი და მეორე რიცხვის საშუალო არითმეტიკული')
+if (int(Number)) > 10 and (int(Number2)) > 10:
+    print(((int(Number)) + (int(Number2))) / 2, 'არის პირველი და მეორე რიცხვის საშუალო არითმეტიკული')
 else:
     print((int(Number)) * (int(Number2)), 'არის პირველი და მეორე რიცხვის ნამრავლი')
 
@@ -108,19 +108,20 @@ Number2 = input('Write any number:')
 
 Number3 = input('Write any number:')
 
-if (int(Number)) < (int(Number2)) < (int(Number3)):
+if (int(Number)) < (int(Number2)) and (int(Number)) < (int(Number3)):
     print('Number 1 is lowest number')
 
 else:
-    if (int(Number2)) < (int(Number)) < (int(Number3)):
+    if (int(Number2)) < (int(Number)) and (int(Number2)) < (int(Number3)):
         print('Number 2 is lowest number')
     else:
-        if (int(Number3)) < (int(Number)) < (int(Number2)):
+        if (int(Number3)) < (int(Number)) and (int(Number3)) < (int(Number2)):
             print('Number 3 is lowest number')
 
 
 # 5: Last digit of number
 
-Number = input('Write any number:')
+Number = int(input('Write any number:'))
 
-print()
+print(Number % 10, "is last digit of number")
+
