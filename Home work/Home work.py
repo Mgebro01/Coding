@@ -7,55 +7,120 @@
 
 
 
-# Homework 2
+# # Homework 2
+#
+# # 1-What's up, Tim
+#
+# message = "What's up, Tim?"
+# print(message)
+#
+# # 2-A and B reverse
+#
+# a = 1
+# b = 4
+# a, b = b, a
+# print('a', a, 'b', b)
+#
+# # 3- Name and last name
+#
+# Name = input("What's your name?:")
+# lastname = input("What's your last name?:")
+#
+# print('you are', Name, lastname)
+#
+# # 4- Salary per month
+#
+# Salaryperhour = input('How much do you earn per hour?:')
+# Workingtime = input('How long do you work a month?:')
+# Answer = int(Salaryperhour) * int(Workingtime)
+#
+# print('You earn', Answer, '$ per month')
+#
+#
+# # 5- საშუალო არითმეტიკული
+#
+# a = input("write any number:")
+# b = input("write any number:")
+# c = input("write any number:")
+#
+# Answer = ((int(a)+int(b)+int(c))/3)
+# print(Answer)
+#
+# # 6- How many years to 100 years
+#
+# Name, Age = (input("What's your name?:")), (input("How old are you?:"))
+# Year = (100 - int(Age))
+#
+# print("You will be 100 years old in", Year, "years")
+#
+# # C to F
+#
+# C = (input("Write any C degrees:"))
+# F = (int(C)*9/5)+32
+#
+# print('Your input in Celsius degrees Fahrenheit', F)
 
-# 1-What's up, Tim
 
-message = "What's up, Tim?"
-print(message)
+# homework-3
 
-# 2-A and B reverse
+# 1: Positive and Negative numbers
 
-a = 1
-b = 4
-a, b = b, a
-print('a', a, 'b', b)
+Number = input('Write any negative or positive number:')
 
-# 3- Name and last name
+if (int(Number)) > 0:
+    print("Number is positive")
 
-Name = input("What's your name?:")
-lastname = input("What's your last name?:")
+if (int(Number)) < 0:
+    print("Number is negative")
 
-print('you are', Name, lastname)
-
-# 4- Salary per month
-
-Salaryperhour = input('How much do you earn per hour?:')
-Workingtime = input('How long do you work a month?:')
-Answer = int(Salaryperhour) * int(Workingtime)
-
-print('You earn', Answer, '$ per month')
+if (int(Number)) == 0:
+    print("Number is equal to zero")
 
 
-# 5- საშუალო არითმეტიკული
+# 2: 10-is jeradi
 
-a = input("write any number:")
-b = input("write any number:")
-c = input("write any number:")
+Number = input('Write any number:')
 
-Answer = ((int(a)+int(b)+int(c))/3)
-print(Answer)
+Finalresult = (int(Number)) % 10
 
-# 6- How many years to 100 years
+if Finalresult == 0:
+    print("რიცხვი ბოლოვდება 0-ით")
+else:
+    print("რიცხვი არ ბოლოვდება 0-ით")
 
-Name, Age = (input("What's your name?:")), (input("How old are you?:"))
-Year = (100 - int(Age))
+# 3: >10 or <10
 
-print("You will be 100 years old in", Year, "years")
+Number = input('Write any number:')
 
-# C to F
+Number2 = input('Write any number:')
 
-C = (input("Write any C degrees:"))
-F = (int(C)*9/5)+32
+if (int(Number)) and (int(Number2)) > 10:
+    print(((int(Number)) + (int(Number))) / 2, 'არის პირველი და მეორე რიცხვის საშუალო არითმეტიკული')
+else:
+    print((int(Number)) * (int(Number2)), 'არის პირველი და მეორე რიცხვის ნამრავლი')
 
-print('Your input in Celsius degrees Fahrenheit', F)
+
+# 4: 3 number programm
+
+Number = input('Write any number:')
+
+Number2 = input('Write any number:')
+
+Number3 = input('Write any number:')
+
+if (int(Number)) < (int(Number2)) < (int(Number3)):
+    print('Number 1 is lowest number')
+
+else:
+    if (int(Number2)) < (int(Number)) < (int(Number3)):
+        print('Number 2 is lowest number')
+    else:
+        if (int(Number3)) < (int(Number)) < (int(Number2)):
+            print('Number 3 is lowest number')
+
+
+# 5: Last digit of number
+
+Number = input('Write any number:')
+
+print()
