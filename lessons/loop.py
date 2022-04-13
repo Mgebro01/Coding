@@ -26,8 +26,6 @@ number = 1
 
 Number = int(input('input number:'))
 
-answer = 0
-
 for i in range(Number, 0, -1):
 
     if Number % i == 0:
