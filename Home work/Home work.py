@@ -164,7 +164,7 @@ print()
 
 for i in range(200, 25, -1):
 
-     if i % 8 == 0:
+    if i % 8 == 0:
         print(i)
 
 
@@ -174,9 +174,9 @@ print()
 print('1500 - 2100 5 ის და 7 ის ჯერადები')
 print()
 
-for i in range(1500, 2100, 1):
+for i in range(1500, 2101, 1):
 
-     if i % 7 == 0 and i % 5 == 0:
+    if i % 7 == 0 and i % 5 == 0:
         print(i)
 
 # 4) 1500-დან 2100-ის ჩათვლით რიცხვების ჯამი რომლებიც არიან 7-ის და 5-ის ჯერადი ერთდროულად.
@@ -189,9 +189,10 @@ Number = 0
 
 for i in range(1500, 2100, 1):
 
-     if i % 7 == 0 and i % 5 == 0:
+    if i % 7 == 0 and i % 5 == 0:
         print(i)
         Number += i
+
 print('ამ რიცხვების ჯამი არის', Number)
 
 
@@ -205,11 +206,11 @@ Number = 0
 
 for i in range(1500, 2100, 1):
 
-     if i % 7 == 0 and i % 5 == 0:
+    if i % 7 == 0 and i % 5 == 0:
         print(i)
         Number += i
 
-     if Number > 20000:
+    if Number > 20000:
         break
 
 print('ამ რიცხვების ჯამი არის', Number)
@@ -224,7 +225,7 @@ Number = 0
 
 for i in range(1500, 2100, 1):
 
-     if i % 5 == 0:
+    if i % 5 == 0:
         print(i)
         Number += i
 
@@ -265,10 +266,10 @@ print()
 
 for i in range(14, 151, 1):
 
-      if i % 5 == 0 and i == 50 or i == 75 or i == 80:
+    if i % 5 == 0 and i == 50 or i == 75 or i == 80:
         continue
-      elif i % 5 == 0:
-          print(i)
+    elif i % 5 == 0:
+        print(i)
 
 # 10) შეიყვანეთ რიცხვი. დაითვალეთ ამ რიცხვის ფაქტორიალი და დაბეჭდეთ. მაგალითად 5-ის ფაქტორიალი იგივია რაც 1 ∗ 2 ∗ 3 ∗ 4 ∗ 5
 
