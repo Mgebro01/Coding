@@ -149,10 +149,10 @@ print('5 ის ჯერადები 20 - 125')
 print()
 Number = 20
 
-while Number < 125:
+while Number <= 125:
 
     if Number % 5 == 0:
-       print(Number)
+        print(Number)
 
     Number += 1
 
