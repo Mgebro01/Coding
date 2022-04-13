@@ -24,3 +24,11 @@ number = 1
 # for i in range(0, 10, 2):
 #     print(i)
 
+Number = int(input('input number:'))
+
+answer = 0
+
+for i in range(Number, 0, -1):
+
+    if Number % i == 0:
+        print(i)
