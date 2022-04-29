@@ -4,9 +4,9 @@
 # print(type('gamarjoba'))
 # print("me var", 14, "wlis" )
 # print(4**4)
-#Easy random generator
-import random
-Words = ('debili', 'wkviani')
-word = random.choice(Words)
-correct = word
-print('nikusha', 'aris', word)
+# #Easy random generator
+# import random
+# Words = ('debili', 'wkviani')
+# word = random.choice(Words)
+# correct = word
+# print('nikusha', 'aris', word)

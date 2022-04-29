@@ -19,15 +19,15 @@
 #
 #
 
-#  ნაკიანი წლები
-
-Year = int(input('write any year:'))
-
-if not Year % 4 == 0 and not Year % 400 == 0 and not Year % 100 == 0:
-    print(Year, 'არ არის, ნაკიანი წელი')
-elif Year % 4 == 0 and not Year % 100 == 0 and not Year % 400 == 0:
-    print(Year, 'არის, ნაკიანი წელი')
-elif Year % 100 == 0 and Year % 4 == 0 and not Year % 400 == 0:
-    print(Year, 'არ არის, ნაკიანი წელი')
-elif Year % 100 == 0 and Year % 4 == 0 and Year % 400 == 0:
-    print(Year, 'არის, ნაკიანი წელი')
+# #  ნაკიანი წლები
+#
+# Year = int(input('write any year:'))
+#
+# if not Year % 4 == 0 and not Year % 400 == 0 and not Year % 100 == 0:
+#     print(Year, 'არ არის, ნაკიანი წელი')
+# elif Year % 4 == 0 and not Year % 100 == 0 and not Year % 400 == 0:
+#     print(Year, 'არის, ნაკიანი წელი')
+# elif Year % 100 == 0 and Year % 4 == 0 and not Year % 400 == 0:
+#     print(Year, 'არ არის, ნაკიანი წელი')
+# elif Year % 100 == 0 and Year % 4 == 0 and Year % 400 == 0:
+#     print(Year, 'არის, ნაკიანი წელი')

@@ -175,23 +175,43 @@
 #  6. შეიყვანეთ ნებისმიერი რიცხვი. დაბეჭდეთ შეტანილი რიცხვი შებრუნებული სახით.
 #  (მითითება: მაგ. თუ შეიტანთ 1254-ს, დაბეჭდოს 4521). შენიშვნა:
 #  არ გააკეთოთ სტრიქონის ტიპის მონაცემისთვის
+#
+# print()
+# print('6. შეიყვანეთ ნებისმიერი რიცხვი. დაბეჭდეთ შეტანილი რიცხვი შებრუნებული სახით. (მითითება: მაგ. თუ შეიტანთ 1254-ს, დაბეჭდოს 4521). შენიშვნა: არ გააკეთოთ სტრიქონის ტიპის მონაცემისთვის')
+# print()
+#
+# number = 1234
+#
+# temp_number = number
+# result = 0
+#
+# while temp_number >= 1:
+#     # result = result * 10 + temp_number % 10
+#     result *= 10
+#     result += temp_number % 10
+#
+#     temp_number //= 10
+#
+# print(result)
 
-print()
-print('6. შეიყვანეთ ნებისმიერი რიცხვი. დაბეჭდეთ შეტანილი რიცხვი შებრუნებული სახით. (მითითება: მაგ. თუ შეიტანთ 1254-ს, დაბეჭდოს 4521). შენიშვნა: არ გააკეთოთ სტრიქონის ტიპის მონაცემისთვის')
-print()
+#
+# Asterisk = '*'
 
-number = 1234
+# for i in range(1, 8):
+#     if i == 1 or i == 4 or i == 7:
+#         Asterisk = '* * * * *'
+#         print(Asterisk)
+#     else:
+#         Asterisk = '*       *'
+#         print(Asterisk)
 
-temp_number = number
-result = 0
-
-while temp_number >= 1:
-    # result = result * 10 + temp_number % 10
-    result *= 10
-    result += temp_number % 10
-
-    temp_number //= 10
-
-print(result)
+#
+#
+# for i in range(1, 10):
+#     if i <= 5:
+#         print('* ' * i)
+#
+#     else:
+#         print('* ' * (10 - i))
 
 
