@@ -561,13 +561,11 @@ print()
 
 from random import uniform
 
-def task1():
-    x = uniform(10, 100)
-    y = uniform(10, 100)
-    print((x + y) / 2)
+def task1(x, y):
+    return ((x + y) / 2)
 
 for i in range(0,3):
-    task1()
+    print(task1(uniform(10, 100), uniform(10, 100)))
 
 # 2. დაწერეთ ფუნქცია, რომელსაც არგუმენტად გადაეცემა ორი რიცხვი და დაითვლის მათ საშუალო არითმეტიკულს და დაბეჭდავს შედეგს
 # (გაითვალისწინეთ რომ დაბეჭდვა უნდა მოხდეს ფუნქციის შიგნით - ფუნქცია არ აბრუნებს მნიშვნელობას).
@@ -580,13 +578,13 @@ print('2. დაწერეთ ფუნქცია, რომელსაც 
 print()
 
 
-def task2():
-    x = uniform(10, 100)
-    y = uniform(10, 100)
-    print((x + y) / 2)
+def task2(x, y):
+    sasualo = (x + y) / 2
 
-    for i in range(0,3):
-        task2()
+    print(sasualo)
+
+for i in range(0,3):
+    task2(uniform(10, 100), uniform(10, 100))
 
 
 
@@ -600,11 +598,11 @@ print()
 
 
 
-def task3():
-    x = int(input('input number:'))
-    print(x * x * x)
+def task3(x):
 
-task3()
+    return x ** 3
+
+print(task3(34))
 
 
 # 4. შექმენით ფუნქცია, რომელიც დაითვლის (დააბრუნებს) ორ რიცხვს შორის მინიმალურ მნიშვნელობას.
@@ -617,15 +615,13 @@ print('4. შექმენით ფუნქცია, რომელიც 
 print()
 
 
-def task4():
-    x = int(input('input number:'))
-    y = int(input('input number:'))
+def task4(x, y):
     if x > y:
-        print(y)
+        return y
     else:
-        print(x)
+        return x
 
-task4()
+print(task4(int(input('input number:')), int(input('input number:'))))
 
 
 # 5. დაწერეთ ფუნქცია, რომელიც შეამოწმებს პარამეტრად გადაცემული რიცხვი არის თუ არა კენტი.
@@ -637,14 +633,13 @@ print('5. დაწერეთ ფუნქცია, რომელიც შ
       ' შეამოწმეთ რამდენიმე რიცხვისთვის და დაბეჭდეთ შედეგი.')
 print()
 
-def task5():
-    x = int(input('input number:'))
+def task5(x):
     if x % 2 != 0:
-        print('შეტანილი რიცხვი კენტია')
+        return True
     else:
-        print('შეტანილი რიცხვი კენტი არაა')
+        return False
 
-task5()
+print(task5(int(input('input number:'))))
 
 # 6. დაწერეთ ფუნქცია, რომელიც დაითვლის (დააბრუნებს) პარამეტრად გადაცემული რიცხვის ფაქტორიალს და დაბეჭდეთ შედეგი სხვადასხვა რიცხვებისთვის.
 
@@ -654,8 +649,42 @@ print()
 
 from math import factorial
 
-def task6():
-    x = int(input("input number:"))
-    print(factorial(x))
+def task6(x):
 
-task6()
+    return factorial(x)
+
+print(task6(int(input("input number:"))))
+
+#7. დაწერეთ უპარამეტრო ფუნქცია რომელიც ეკრანზე ბეჭდავს შემდეგ ტექსტს: “Hello World”.
+# (გაითვალისწინეთ რომ ფუნქცია არ აბრუნებს მნიშვნელობას).
+
+print()
+print("7. დაწერეთ უპარამეტრო ფუნქცია რომელიც ეკრანზე ბეჭდავს შემდეგ ტექსტს: “Hello World”."
+      " (გაითვალისწინეთ რომ ფუნქცია არ აბრუნებს მნიშვნელობას).")
+print()
+
+
+def task7():
+    print("hello world")
+
+task7()
+
+# 8. დაწერეთ ფუნქცია, რომელიც დაადგენს არის თუ არა პარამეტრად გადაცემული რიცხვი მარტივი რიცხვი.
+
+print()
+print('8. დაწერეთ ფუნქცია, რომელიც დაადგენს არის თუ არა პარამეტრად გადაცემული რიცხვი მარტივი რიცხვი.')
+print()
+
+def task8(x):
+
+    is_prine = True
+    for i in range(2, x):
+
+         if x % i == 0:
+             is_prine = False
+             break
+
+    return is_prine
+
+
+print(task8(int(input('input number:'))))
