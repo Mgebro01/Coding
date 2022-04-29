@@ -652,11 +652,10 @@ print()
 print('6. დაწერეთ ფუნქცია, რომელიც დაითვლის (დააბრუნებს) პარამეტრად გადაცემული რიცხვის ფაქტორიალს და დაბეჭდეთ შედეგი სხვადასხვა რიცხვებისთვის.')
 print()
 
+from math import factorial
+
 def task6():
-    x = 1
-    end = int(input("input number:"))
-    for i in range(0, end):
-        x *= i
-    print(x)
+    x = int(input("input number:"))
+    print(factorial(x))
 
 task6()
