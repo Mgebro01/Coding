@@ -602,7 +602,7 @@ print()
 
 def task3():
     x = int(input('input number:'))
-    print(x * x)
+    print(x * x * x)
 
 task3()
 
