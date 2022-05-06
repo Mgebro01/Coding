@@ -717,7 +717,7 @@ print('2. დაწერეთ ფუნქცია, რომელსაც 
 print()
 
 def triangle(a, b, c):
-    if (a + b) > c:
+    if (a + b) > c or (a + c) > b or (c + b) > a:
         return True
     else:
         return False
