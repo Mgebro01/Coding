@@ -803,7 +803,7 @@ print()
 file_object2 = open('testfile.txt', 'r')
 i = file_object2.read()
 
-print(file_object2.read())
+print(i)
 print(len(i))
 
 file_object2.close()
@@ -838,3 +838,6 @@ file_object3.write(i)
 
 file_object3.close()
 file_object2.close()
+
+
+# homeowrk done !
