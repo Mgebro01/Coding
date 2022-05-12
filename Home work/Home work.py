@@ -752,29 +752,89 @@
 #
 #homework 11
 # task 1. შეიყვანეთ სტრიქონი. გადაიყვანეთ სტრიქონის ყველა სიმბოლო მაღალ რეგისტრში და დაბეჭდეთ შედეგი.
+#
+# print()
+# print('1. შეიყვანეთ სტრიქონი. გადაიყვანეთ სტრიქონის ყველა სიმბოლო მაღალ რეგისტრში და დაბეჭდეთ შედეგი.')
+# print()
+#
+# text = input('input text:')
+#
+# print(text.upper())
+#
+# # task 2. შეიყვანეთ სამი სტრიქონი რომელიც წარმოადგენს სხვადასხვა ხილის დასახელებას (მაგ. Banana, Watermelon, Apple).
+# # დაბეჭდეთ ისინი ალფაბეტის ზრდადობის მიხედვით.
+#
+# print()
+# print('2. შეიყვანეთ სამი სტრიქონი რომელიც წარმოადგენს სხვადასხვა ხილის დასახელებას'
+#       ' (მაგ. Banana, Watermelon, Apple).'
+#       ' დაბეჭდეთ ისინი ალფაბეტის ზრდადობის მიხედვით.')
+# print()
+#
+# alphabet = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
+#
+# text = input('input fruit >')
+# text2 = input('input fruit >')
+# text3 = input('input fruit >')
+#
+# #
+
+# homework 12
+#1. დაწერეთ პროგრამა, რომლის მეშვეობით შექმნით ფაილს იმავე დირექტორიაში (საქაღალდეში), ჩაწერეთ მასში ნებისმიერი ტექსტი და დახურეთ ფაილი.
 
 print()
-print('1. შეიყვანეთ სტრიქონი. გადაიყვანეთ სტრიქონის ყველა სიმბოლო მაღალ რეგისტრში და დაბეჭდეთ შედეგი.')
+print('1. დაწერეთ პროგრამა, რომლის მეშვეობით შექმნით ფაილს იმავე დირექტორიაში'
+      ' (საქაღალდეში), ჩაწერეთ მასში ნებისმიერი ტექსტი და დახურეთ ფაილი.')
 print()
 
-text = input('input text:')
+file = open('testfile.txt', 'w+')
 
-print(text.upper())
+file_object = open('testfile.txt', 'w')
+file_object.write('task done')
+file_object.close()
 
-# task 2. შეიყვანეთ სამი სტრიქონი რომელიც წარმოადგენს სხვადასხვა ხილის დასახელებას (მაგ. Banana, Watermelon, Apple).
-# დაბეჭდეთ ისინი ალფაბეტის ზრდადობის მიხედვით.
+# 2. დაწერეთ პროგრამა, რომლის მეშვეობით გახსნით ფაილს, წაიკითხავთ კონტენტს და დაბეჭდავთ ეკრანზე. დაითვალეთ სიმბოლოების რაოდენობა ფაილში.
 
 print()
-print('2. შეიყვანეთ სამი სტრიქონი რომელიც წარმოადგენს სხვადასხვა ხილის დასახელებას'
-      ' (მაგ. Banana, Watermelon, Apple).'
-      ' დაბეჭდეთ ისინი ალფაბეტის ზრდადობის მიხედვით.')
+print('2. დაწერეთ პროგრამა, რომლის მეშვეობით გახსნით ფაილს,'
+      ' წაიკითხავთ კონტენტს და დაბეჭდავთ ეკრანზე.'
+      ' დაითვალეთ სიმბოლოების რაოდენობა ფაილში.')
 print()
-alphabet = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
-text = input('input fruit >')
-text2 = input('input fruit >')
-text3 = input('input fruit >')
 
-if text[1] < text2[1] and text[1] < text3[1]:
-      print(text)
-elif
+file_object2 = open('testfile.txt', 'r')
+i = file_object2.read()
 
+print(file_object2.read())
+print(len(i))
+
+file_object2.close()
+#
+#
+# 3. დაწერეთ პროგრამა, რომლის მეშვეობით გახსნით უკვე არსებულ ფაილს და ბოლოში დაამატეთ თქვენთვის სასურველი ტექსტი.
+print()
+print('3. დაწერეთ პროგრამა, რომლის მეშვეობით გახსნით უკვე არსებულ ფაილს და ბოლოში დაამატეთ თქვენთვის სასურველი ტექსტი.')
+print()
+
+
+file_object2 = open('testfile.txt', 'a')
+file_object2.write('\nhello world')
+
+file_object2.close()
+#
+#
+#
+#4. დაწერეთ პროგრამა რომელიც წაიკითხავს ინფორმაციას ერთი ფაილიდან და ჩააკოპირებს მეორე (ახალ) ფაილში.
+#
+print()
+print('4. დაწერეთ პროგრამა რომელიც წაიკითხავს ინფორმაციას ერთი ფაილიდან და ჩააკოპირებს მეორე (ახალ) ფაილში.')
+print()
+
+
+file_object2 = open('testfile.txt', 'r')
+i = file_object2.read()
+
+file_object3 = open('test_file_2', 'w+')
+
+file_object3.write(i)
+
+file_object3.close()
+file_object2.close()

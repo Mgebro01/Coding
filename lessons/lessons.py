@@ -187,20 +187,137 @@
 # b = 'world'
 # c = f'{a} {b}!'
 # print(c)
+#
+# f_name = input('first name: ')
+# l_name = input('last name: ')
+#
+# inp = input('(1) - gmail.com \n(2) - apple.com \n(3) - students.gov.ge\n> ')
+#
+# if inp == '1':
+#     domain = 'gmail.com'
+# elif inp == '2':
+#     domain = 'apple.com'
+# elif inp == '3':
+#     domain = 'students.gov.ge'
+# else:
+#     domain = 'mail.ru'
+#
+#
+# print(f'{f_name}.{l_name}@{domain}')
 
-f_name = input('first name: ')
-l_name = input('last name: ')
+# lesson 4
 
-inp = input('(1) - gmail.com \n(2) - apple.com \n(3) - students.gov.ge\n> ')
+# 3. text ცვლადს მიანიჭეთ სტრიქონი "სწავლის ძირი მწარე არის, კენწეროში გატკბილდების".
+# სტრიქონიდან წაიკითხეთ პირველი 20 სიმბოლო და დაბეჭდეთ შედეგი
+# . დაითვალეთ რამდენჯერ არის ნახსენები სიმბოლო
+#
+# print()
+# print('3. text ცვლადს მიანიჭეთ სტრიქონი "სწავლის ძირი მწარე არის, კენწეროში გატკბილდების". სტრიქონიდან წაიკითხეთ პირველი 20 სიმბოლო და დაბეჭდეთ შედეგი. დაითვალეთ რამდენჯერ არის ნახსენები სიმბოლო ''. ')
+# print()
+#
+# text = 'სწავლის ძირი მწარე არის, კენწეროში გატკბილდების'
+#
+# print(text[:20], text[:20].count('ს'))
+#
+# #
+# # 4. შეიყვანეთ სტრიქონი. პატარა ლატინური ასოები შეცვალეთ დიდი ლათინური ასოებით, ხოლო დიდი-პატარათი და გამოიტანეთ შედეგი.
+# #
+# print()
+# print('4. შეიყვანეთ სტრიქონი. პატარა ლატინური ასოები შეცვალეთ დიდი ლათინური ასოებით, ხოლო დიდი-პატარათი და გამოიტანეთ შედეგი.')
+# print()
+# #
+# text = input('input text:')
+# new_text = ''
+# for i in text:
+#     if i == i.upper():
+#         new_text += i.lower()
+#     else:
+#         new_text += i.upper()
+#
+# print(new_text)
 
-if inp == '1':
-    domain = 'gmail.com'
-elif inp == '2':
-    domain = 'apple.com'
-elif inp == '3':
-    domain = 'students.gov.ge'
-else:
-    domain = 'mail.ru'
+#
+# text = input('input text:')
+# new_text = ''
+# for i in text:
+#     if i.isupper():
+#         new_text += i.lower()
+#     else:
+#         new_text += i.upper()
+#
+# print(new_text)
+
+#
+#
+# 6. დაწერეთ პროგრამა, რომელშიც მომხარებელს შეაყვანინებთ რაიმე სტრიქონს. პროგრამამ უნდა დაითვალოს დიდი ლათინური ასოების, პატარა ლათინური ასოების და ციფრების რაოდენობა ცალ-ცალკე და დაბეჭდეთ მიღებული შედეგები.
+# ასევე დაითვალეთ სტრიქონში გამოყენებული სპეციალური სიმბოლოების რაოდენობა როგორიცაა !@#$%^&*()_+
+#
+# print()
+# print('6. დაწერეთ პროგრამა, რომელშიც მომხარებელს'
+#       ' შეაყვანინებთ რაიმე სტრიქონს. პროგრამამ '
+#       'უნდა დაითვალოს დიდი'
+#       ' ლათინური ასოების, პატარა '
+#       'ლათინური ასოების და ციფრების რაოდენობა'
+#       ' ცალ-ცალკე და დაბეჭდეთ მიღებული შედეგები. ასევე'
+#       ' დაითვალეთ სტრიქონში გამოყენებული სპეციალური'
+#       ' სიმბოლოების რაოდენობა როგორიცაა !@#$%^&*()_+')
+# print()
+#
+# symbols = '!@#$%^&*()_+'
+# text = input('input text:')
+# countupper = 0
+# countlower = 0
+# countnumber = 0
+# countsymbol = 0
+#
+# for i in text:
+#     if i.isupper():
+#         countupper += 1
+#     if i.islower():
+#         countlower += 1
+#     if i.isdigit():
+#         countnumber += 1
+#     if i in symbols:
+#         countsymbol += 1
+#
+# print(countupper)
+# print(countlower)
+# print(countnumber)
+# print(countsymbol)
+#
+# #
+# #
+# # 8. შეიყვანეთ ნებისმიერი სტრიქონი. იპოვეთ ყველაზე ხშირად განმეორებადი სიმბოლო და დაბეჭდეთ.
+# #
+# print()
+# print('8. შეიყვანეთ ნებისმიერი სტრიქონი. იპოვეთ ყველაზე ხშირად განმეორებადი სიმბოლო და დაბეჭდეთ.')
+# print()
+#
+# text = input('input text:')
+#
+# for i in text:
+#     text.count(i)
 
 
-print(f'{f_name}.{l_name}@{domain}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
