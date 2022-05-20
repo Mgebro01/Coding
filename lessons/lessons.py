@@ -299,8 +299,26 @@
 #     text.count(i)
 
 
+# file_object = open('file.txt', 'r')
+# file_object2 = open('files.py', 'r')
+# file_object3 = open('file3.txt', 'w')
+#
+# file_object3.write(file_object.read() + file_object2.read())
 
+# file_object.close()
+# file_object2.close()
+# file_object3.close()
+#
+# file_object4 = open('files.py', 'r')
+#
+# print(file_object4.read().upper())
+#
 
+# with open('gamarjoba.txt', 'r') as file_obj:
+#     # for i in range(8000000000000):
+#     #     print(file_obj.readline())
+#     for line in file_obj:
+#         print(line)
 
 
 
