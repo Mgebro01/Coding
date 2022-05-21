@@ -320,14 +320,70 @@
 #     for line in file_obj:
 #         print(line)
 
+#
+# with open("data.txt", "a") as file_obj:
+#     while True:
+#         inp = input("> ")
+#         if inp == '0':
+#             break
+#         file_obj.write(f'{inp}\n')
+#
+#
+#
+#
+#
+# with open("data.txt", "r") as file_obj:
+#
+#     file2 = open('result.txt', 'w')
+#     for i in file_obj:
+#         file2.write(f'{i[:-1]} ')
+#
+#     file2.close()
+#
+#
+#
+# #3. დაწერეთ პროგრამა, დაითვლის ფაილში სიტყვების, სიმბოლოების და ხაზების რაოდენობას. დაბეჭდეთ მიღებული შედეგები.
+#
+#
+# linecount = 0
+# wordcount = 0
+#
+# with open("data.txt", "r") as file:
+#     symbol_count = len(file.read())
+#
+# with open("data.txt", "r") as file:
+#
+#     for i in file:
+#         linecount += 1
+#
+# with open("data.txt", "r") as file:
+#
+#     text = file.read().replace('\n', ' ')
+#     for i in range(symbol_count):
+#         if " " in text[i]:
+#             wordcount += 1
+#
+# print(symbol_count)
+# print(wordcount)
+# print(linecount)
 
 
 
+# 4. შექმენით ტექსტური ფაილი რომელშიც ჩაწერთ რიცხვებს ცალ-ცალკე ხაზზე.
+# დაწერეთ პროგრამა, რომელიც წაიკითხავს მონაცემებს ფაილიდან,
+# აიყვანს რიცხვებს კვადრატში და ჩაწერს შედეგებს ახალ ფაილში.
 
 
+with open('number.txt', 'w') as file:
+    for i in range(0, int(input('input how many number do you want:'))):
+        file.write(input('input number:') + '\n')
 
-
-
+with open('number.txt', 'r') as file:
+    file2 = open('result.txt', 'w')
+    for N in file:
+        number = int(N)
+        file2.write(str(number ** 2) + '\n')
+    file2.close()
 
 
 
