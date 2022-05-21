@@ -33,14 +33,21 @@
 # file = open('cursor.txt', 'a')
 # file.write('\n' + input())
 # file.close()
+#
+# with open('cursor.txt', 'w') as f:
+#     for i in range(1, 11):
+#         f.write(f'line {i}\n')
+# with open('cursor.txt', 'r') as f:
+#     # for i in range(1, 101):
+#     #     print(f.readline())
+#     for line in f:
+#         print(line[:-1])
+#
+# print('gamarjoba seni asakia {}'.format(123))
 
-with open('cursor.txt', 'w') as f:
-    for i in range(1, 11):
-        f.write(f'line {i}\n')
-with open('cursor.txt', 'r') as f:
-    # for i in range(1, 101):
-    #     print(f.readline())
-    for line in f:
-        print(line[:-1])
 
-print('gamarjoba seni asakia {}'.format(123))
+text = "დაწე,რეთ პროგრამა, რომლის მეშვ,ეობით ერთი ფაილიდან წაიკითხავთ კონტენტს."
+
+print(text.find('პრო'))
+print(text[:text.find('პრო')])
+print(text[text.find('პრო'):text.find('პრო')+len('პრო')])

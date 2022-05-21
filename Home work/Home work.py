@@ -977,9 +977,12 @@ with open('oscars.txt', 'r') as file:
             age = int(i[7:9])
 
         if year == i[:4]:
-            print(i[:-1])
+            N = i.rfind(',')
+            print(i[10:N])
+
     print()
-    print('Youngest is', youngest)
+    result = youngest.rfind(',')
+    print('Youngest is', youngest[7:result])
 
 
 
