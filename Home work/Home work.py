@@ -965,6 +965,9 @@ print(task_1(number))
 
 # • დაბეჭდეთ იმ მსახიობის სახელი, გვარი და ასაკი, რომელმაც ყველაზე
 # ახალგაზრდამ აიღო ოსკარი.
+print()
+print()
+print()
 
 youngest = ''
 age = 100
@@ -984,11 +987,42 @@ with open('oscars.txt', 'r') as file:
     result = youngest.rfind(',')
     print('Youngest is', youngest[7:result])
 
+#
+#
+#
+# Account registration
+#
+print()
+print('you must input your password and addres and Then a code(Account Key) will be created '
+      'in the file which belongs to your account and you can see it only with the code ')
+print()
 
+addres = input('input addres:>')
 
+if addres.__contains__('@gmail.com'):
+    i = True
+else:
+    i = False
 
+addres.strip(' ')
 
+if i == False:
+    addres += '@gmail.com'
 
+password = input('input password:>')
 
+from random import randint
 
+with open('Account_Key.txt', 'w') as file:
+    file.write(str(randint(100000000, 999999999)))
 
+with open('Account_Key.txt', 'r') as file:
+    Account_key = input('input your password to see your account key:')
+    if Account_key == password:
+        print('your account key is', file.read())
+        print('your addres is', addres)
+        print('your password is', password)
+    else:
+        print('Wrong password.')
+#
+# Task done!
