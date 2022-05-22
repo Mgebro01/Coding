@@ -1004,7 +1004,7 @@ if addres.__contains__('@gmail.com'):
 else:
     i = False
 
-addres.strip(' ')
+addres = addres.replace(" ", "")
 
 if i == False:
     addres += '@gmail.com'
