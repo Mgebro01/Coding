@@ -373,22 +373,31 @@
 # დაწერეთ პროგრამა, რომელიც წაიკითხავს მონაცემებს ფაილიდან,
 # აიყვანს რიცხვებს კვადრატში და ჩაწერს შედეგებს ახალ ფაილში.
 
+#
+# with open('number.txt', 'w') as file:
+#     for i in range(0, int(input('input how many number do you want:'))):
+#         file.write(input('input number:') + '\n')
+#
+# with open('number.txt', 'r') as file:
+#     file2 = open('result.txt', 'w')
+#     for N in file:
+#         number = int(N)
+#         file2.write(str(number ** 2) + '\n')
+#     file2.close()
 
-with open('number.txt', 'w') as file:
-    for i in range(0, int(input('input how many number do you want:'))):
-        file.write(input('input number:') + '\n')
+#
+#
+#
+#
+#
 
-with open('number.txt', 'r') as file:
-    file2 = open('result.txt', 'w')
-    for N in file:
-        number = int(N)
-        file2.write(str(number ** 2) + '\n')
-    file2.close()
+from math import sqrt
 
-
+def my_task_1(x):
+    return int(sqrt(x)) ** 2 == x
 
 
-
+print(my_task_1(66))
 
 
 

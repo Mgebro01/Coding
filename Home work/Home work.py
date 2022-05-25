@@ -939,10 +939,10 @@ from math import sqrt
 def task_1(x):
     result = sqrt(x)
     print(result)
-    if str(result).__contains__('.'):
-         return False
-    else:
+    if str(result).endswith('.0'):
          return True
+    else:
+         return False
 
 
 number = int(input('შეიყვანე ნებისმიერი მთელი რიცხვი:>'))
