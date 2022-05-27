@@ -6,7 +6,6 @@
 # print((42+3*3)/(2+4))
 
 
-
 # # Homework 2
 #
 # # 1-What's up, Tim
@@ -548,7 +547,6 @@
 #
 
 
-
 # homework 9
 
 # 1. შექმენით ფუნქცია, რომელსაც არგუმენტად გადაეცემა ორი რიცხვი და დაითვლის (დააბრუნებს) მათ საშუალო არითმეტიკულს.
@@ -694,7 +692,7 @@
 # homework 10
 # task 1
 #
-#1. შეიყვანეთ ნებისმიერი სტრიქონი. იპოვეთ ყველაზე ხშირად განმეორებადი სიმბოლო და დაბეჭდეთ.
+# 1. შეიყვანეთ ნებისმიერი სტრიქონი. იპოვეთ ყველაზე ხშირად განმეორებადი სიმბოლო და დაბეჭდეთ.
 #
 # print()
 # print('1. შეიყვანეთ ნებისმიერი სტრიქონი. იპოვეთ ყველაზე ხშირად განმეორებადი სიმბოლო და დაბეჭდეთ.')
@@ -750,7 +748,7 @@
 # #
 #
 #
-#homework 11
+# homework 11
 # task 1. შეიყვანეთ სტრიქონი. გადაიყვანეთ სტრიქონის ყველა სიმბოლო მაღალ რეგისტრში და დაბეჭდეთ შედეგი.
 #
 # print()
@@ -779,7 +777,7 @@
 # #
 
 # homework 12
-#1. დაწერეთ პროგრამა, რომლის მეშვეობით შექმნით ფაილს იმავე დირექტორიაში (საქაღალდეში), ჩაწერეთ მასში ნებისმიერი ტექსტი და დახურეთ ფაილი.
+# 1. დაწერეთ პროგრამა, რომლის მეშვეობით შექმნით ფაილს იმავე დირექტორიაში (საქაღალდეში), ჩაწერეთ მასში ნებისმიერი ტექსტი და დახურეთ ფაილი.
 #
 # print()
 # print('1. დაწერეთ პროგრამა, რომლის მეშვეობით შექმნით ფაილს იმავე დირექტორიაში'
@@ -928,101 +926,141 @@
 # #
 #
 #
-#1. დაწერეთ ფუნქცია, რომელიც დაადგენს არის თუ არა პარამეტრად გადაცემული რიცხვი რაიმე მთელი რიცხვის კვადრატი.
+# 1. დაწერეთ ფუნქცია, რომელიც დაადგენს არის თუ არა პარამეტრად გადაცემული რიცხვი რაიმე მთელი რიცხვის კვადრატი.
 # ფუნქციამ უნდა დააბრუნოს შესაბამისი მნიშვნელობა. ფუნქციის გარეთ მომხმარებელს შეატანინეთ ნებისმიერი მთელი რიცხვი.
 # გამოიძახეთ შექმნილილ ფუნქცია ამ რიცხვისთვის და დაბეჭდეთ შესაბამისი შეტყობინება.
 #
+# #
 #
+# from math import sqrt
+#
+#
+# def task_1(x):
+#     result = sqrt(x)
+#     print(result)
+#     if str(result).endswith('.0'):
+#         return True
+#     else:
+#         return False
+#
+#
+# number = int(input('შეიყვანე ნებისმიერი მთელი რიცხვი:>'))
+#
+# print(task_1(number))
+#
+# # task done!
+#
+#
+# # 2. იხილეთ ატვირთული ფაილი oscars.txt, რომელშიც მოცემულია ოსკაროსანი საუკეთესო ქალის და მამაკაცის
+# # შემსრულებელი მსახიობების სია.
+# # ფაილის თითოეულ სტრიქონზე მოცემულია წელი, მსახიობის სქესი, ასაკი (ოსკარის აღების მომენტში),
+# # მსახიობის სახელი გვარი და ფილმის დასახელება. აღნიშნული ველები ერთმანეთისგან გამოყოფილია მძიმით.
+# # დაწერეთ პროგრამა, რომელიც იმუშავებს ამ ფაილთან და შეასრულებს შემდეგ დავალებებს:
+#
+# # • მომხმარებელს შეაყვანინეთ წელი, იპოვეთ შეყვანილ წელს ოსკაროსნების სახელი
+# # გვარი და დაბეჭდეთ.
+#
+# # • დაბეჭდეთ იმ მსახიობის სახელი, გვარი და ასაკი, რომელმაც ყველაზე
+# # ახალგაზრდამ აიღო ოსკარი.
+# print()
+# print()
+# print()
+#
+# youngest = ''
+# age = 100
+#
+# with open('oscars.txt', 'r') as file:
+#     year = input('input year:')
+#     for i in file:
+#         if age > int(i[7:9]):
+#             youngest = i
+#             age = int(i[7:9])
+#
+#         if year == i[:4]:
+#             N = i.rfind(',')
+#             print(i[10:N])
+#
+#     print()
+#     result = youngest.rfind(',')
+#     print('Youngest is', youngest[7:result])
+#
+# #
+# #
+# #
+# # Account registration
+# #
+# print()
+# print('you must input your password and addres and Then a code(Account Key) will be created '
+#       'in the file which belongs to your account and you can see it only with the code ')
+# print()
+#
+# from random import randint
+#
+# addres = input('input addres:>')
+#
+# addres = addres.replace(" ", "")
+#
+# if '@gmail.com' not in addres:
+#     addres += '@gmail.com'
+#
+# password = input('input password:>')
+#
+#
+# with open('Account_Key.txt', 'w') as file:
+#     file.write(str(randint(100000000, 999999999)))
+#
+# with open('Account_Key.txt', 'r') as file:
+#     Account_key = input('input your password to see your account key:')
+#     if Account_key == password:
+#         print('your account key is', file.read())
+#         print('your addres is', addres)
+#         print('your password is', password)
+#     else:
+#         print('Wrong password.')
+# #
+# # Task done!
 
-from math import sqrt
 
-def task_1(x):
-    result = sqrt(x)
-    print(result)
-    if str(result).endswith('.0'):
-         return True
-    else:
-         return False
+# Homework
+#
+# 1. შექმენით ლისტი numbs ნებისმიერ 5 რიცხვითი მნიშვნელობით. იპოვეთ ამ რიცხვების ჯამი, მინიმალური, მაქსიმალური და საშუალო არითმეტიკული. ასევე შეასრულეთ შემდეგი ოპერაციები:
+# • სიას დაამატეთ ბოლო ელემენტად რიცხვი 102
+# • სიის მესამე ელემენტად ჩასვით რიცხვი 205
+# • წაშალეთ სიის მე-4 ელემენტი
+# • დაალაგეთ სია ზრდადობის მიხედვით და დაბეჭდეთ
 
-
-number = int(input('შეიყვანე ნებისმიერი მთელი რიცხვი:>'))
-
-print(task_1(number))
-
-
-
-# task done!
-
-
-# 2. იხილეთ ატვირთული ფაილი oscars.txt, რომელშიც მოცემულია ოსკაროსანი საუკეთესო ქალის და მამაკაცის
-# შემსრულებელი მსახიობების სია.
-# ფაილის თითოეულ სტრიქონზე მოცემულია წელი, მსახიობის სქესი, ასაკი (ოსკარის აღების მომენტში),
-# მსახიობის სახელი გვარი და ფილმის დასახელება. აღნიშნული ველები ერთმანეთისგან გამოყოფილია მძიმით.
-# დაწერეთ პროგრამა, რომელიც იმუშავებს ამ ფაილთან და შეასრულებს შემდეგ დავალებებს:
-
-# • მომხმარებელს შეაყვანინეთ წელი, იპოვეთ შეყვანილ წელს ოსკაროსნების სახელი
-# გვარი და დაბეჭდეთ.
-
-# • დაბეჭდეთ იმ მსახიობის სახელი, გვარი და ასაკი, რომელმაც ყველაზე
-# ახალგაზრდამ აიღო ოსკარი.
 print()
-print()
-print()
-
-youngest = ''
-age = 100
-
-with open('oscars.txt', 'r') as file:
-    year = input('input year:')
-    for i in file:
-        if age > int(i[7:9]):
-            youngest = i
-            age = int(i[7:9])
-
-        if year == i[:4]:
-            N = i.rfind(',')
-            print(i[10:N])
-
-    print()
-    result = youngest.rfind(',')
-    print('Youngest is', youngest[7:result])
-
-#
-#
-#
-# Account registration
-#
-print()
-print('you must input your password and addres and Then a code(Account Key) will be created '
-      'in the file which belongs to your account and you can see it only with the code ')
+print('task 1')
 print()
 
-addres = input('input addres:>')
+result = 0
 
-if addres.__contains__('@gmail.com'):
-    i = True
-else:
-    i = False
+numbs = [6, 8, 34, 23, 89]
 
-addres = addres.replace(" ", "")
+print(max(numbs), min(numbs))
 
-if i == False:
-    addres += '@gmail.com'
+for i in numbs:
+    result += i + result
 
-password = input('input password:>')
+print(result)
+print(result / 5)
 
-from random import randint
+#  .1
 
-with open('Account_Key.txt', 'w') as file:
-    file.write(str(randint(100000000, 999999999)))
+numbs.insert(5, 102)
+print(numbs)
 
-with open('Account_Key.txt', 'r') as file:
-    Account_key = input('input your password to see your account key:')
-    if Account_key == password:
-        print('your account key is', file.read())
-        print('your addres is', addres)
-        print('your password is', password)
-    else:
-        print('Wrong password.')
+#  .2
+
+numbs.insert(2, 205)
+print(numbs)
+
+#  .3
+
+numbs.pop(3)
+print(numbs)
+
+#  .4
+
 #
-# Task done!
+
