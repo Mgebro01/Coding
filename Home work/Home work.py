@@ -1040,14 +1040,14 @@ numbs = [6, 8, 34, 23, 89]
 print(max(numbs), min(numbs))
 
 for i in numbs:
-    result += i + result
+    result += i
 
 print(result)
 print(result / 5)
 
 #  .1
 
-numbs.insert(5, 102)
+numbs.append(102)
 print(numbs)
 
 #  .2

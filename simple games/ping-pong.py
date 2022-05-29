@@ -1,21 +1,21 @@
 import turtle as t
-PlayerAscore=0
-PlayerBscore=0
+PlayerAscore = 0
+PlayerBscore = 0
 
-window=t.Screen()
+window = t.Screen()
 window.title('ping-pong game')
 window.bgcolor('green')
-window.setup(width=800,height=600)
+window.setup(width=800, height=600)
 window.tracer(0)
 
 #creating left paddle
-leftpaddle=t.Turtle()
+leftpaddle = t.Turtle()
 leftpaddle.speed(0)
 leftpaddle.shape('square')
 leftpaddle.color('white')
-leftpaddle.shapesize(stretch_wid=5,stretch_len=1)
+leftpaddle.shapesize(stretch_wid=5, stretch_len=1)
 leftpaddle.penup()
-leftpaddle.goto(-350.0)
+leftpaddle.goto(int((-350.0)))
 
 #right paddle
 rightpaddle=t.Turtle()
@@ -99,14 +99,14 @@ if ball.ycor()>290:
         ballydirection=ballxdirection*-1
 
     if ball.xcor()>390:
-        ball.goto(0,0)
+        ball.goto(0, 0)
         ballxdirection=ballxdirection
         PlayerAscore=PlayerAscore+1
         pen.clear()
         pen.write("Player A:{}    Player B:{}".format(PlayerAscore,PlayerBscore),align='center',font=('Arial',24,'normal'))
 
     if(ball.xcor())<-390:
-        ball.goto(0,0)
+        ball.goto(0, 0)
         ballxdirection=ballxdirection*-1
         PlayerBscore=PlayerBscore+1
         pen.clear()
@@ -115,10 +115,10 @@ if ball.ycor()>290:
 
     #handing the collisions
 
-    if (ball.xcor()>340)and(ball.xcor()<350)and(ball.ycor()<rightpaddle.ycor()+40 and ball.ycor()>rightpaddle.ycor()-40)
+    if (ball.xcor()>340)and(ball.xcor()<350)and(ball.ycor()<rightpaddle.ycor()+40 and ball.ycor()>rightpaddle.ycor()-40):
         ball.setx(340)
         ballxdirection=ballxdirection*-1
 
-    if (ball.xcor()>-340)and(ball.xcor()<-350)and(ball.ycor() <leftpaddle.ycor()+40 and ball.ycor()>leftpaddle.ycor()-40)
+    if (ball.xcor()>-340)and(ball.xcor()<-350)and(ball.ycor() <leftpaddle.ycor()+40 and ball.ycor()>leftpaddle.ycor()-40):
         ball.setx(-340)
         ballxdirection=ballxdirection*-1

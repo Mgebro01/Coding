@@ -390,17 +390,42 @@
 #
 #
 #
-
-from math import sqrt
-
-def my_task_1(x):
-    return int(sqrt(x)) ** 2 == x
-
-
-print(my_task_1(66))
-
-
+#
+# from math import sqrt
+#
+# def my_task_1(x):
+#     return int(sqrt(x)) ** 2 == x
+#
+#
+# print(my_task_1(66))
 
 
+numbs = [2, 23, 4, 53, 34, 7]
+
+for i in range(len(numbs) -1, -1, -1):
+    if numbs[i] % 2 != 0:
+        numbs.pop(i)
+
+print(numbs)
 
 
+my_list = [5, 50, 500]
+
+for i in range(0, len(my_list)):
+    my_list[i] = my_list[i] * 10
+
+print(my_list)
+
+
+my_list = [5, 50, 500]
+# for i in range(5):
+#      my_list.append(random.randint(1, 100))
+print(my_list)
+
+k = 0
+
+for i in my_list:
+    # print(my_list.index(i), i)
+    my_list[k] = i * 10
+    k += 1
+print(my_list)
