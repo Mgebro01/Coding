@@ -1,11 +1,11 @@
 # Homework 1
-
+#
 # print(9-3, 8*2.5, 9/2, 9/-2, 9%2, 9**2)
 # print(4-2**3+5*2-3/2)
 # print((3+245)*4-3**4)
 # print((42+3*3)/(2+4))
-
-
+#
+#
 # # Homework 2
 #
 # # 1-What's up, Tim
@@ -58,12 +58,12 @@
 # F = (int(C)*9/5)+32
 #
 # print('Your input in Celsius degrees Fahrenheit', F)
-
-
+#
+#
 # homework-3
-
+#
 # 1: Positive and Negative numbers
-
+#
 # Number = input('Write any negative or positive number:')
 #
 # if (int(Number)) > 0:
@@ -123,9 +123,9 @@
 # Number = int(input('Write any number:'))
 #
 # print(Number % 10, "is last digit of number")
-
+#
 # Homework 4
-
+#
 #  ნაკიანი წლები
 #
 # Year = int(input('write any year:'))
@@ -138,12 +138,12 @@
 #     print(Year, 'არ არის, ნაკიანი წელი')
 # elif Year % 100 == 0 and Year % 4 == 0 and Year % 400 == 0:
 #     print(Year, 'არის, ნაკიანი წელი')
-
-
+#
+#
 # Homework 5
-
+#
 # 1) 5 ის ჯერადები 20 - 125
-
+#
 # print('5 ის ჯერადები 20 - 125')
 # print()
 # Number = 20
@@ -313,9 +313,9 @@
 #
 # print(Number)
 #
-
+#
 # Homework 6
-
+#
 # 1.შეიყვანეთ 2 დადებითი მთელი რიცხვი. იპოვეთ ამ ორი რიცხვის უდიდესი საერთო გამყოფი.
 #
 # print()
@@ -393,9 +393,9 @@
 #     print(i)
 #
 #
-
+#
 #  Homework 7
-
+#
 # 1. შეიყვანეთ ნებისმიერი რიცხვი. დაადგინეთ არის
 # თუ არა შეტანილი რიცხვი პალინდრომი. (მითითება: პალინდრომია რიცხვი, რომელიც მარჯვნიდან და მარცხნიდან ერთნაირად იკითხება)
 # . მაგ. 12521 არის პალინდრომი
@@ -462,8 +462,8 @@
 #              temp_number //= 10
 #          if result == n:
 #              print(n)
-
-
+#
+#
 # homework 8
 # 1. შეიტანეთ ათწილადი რიცხვი, დაამრგვალეთ ათწილად ნაწილში მეათედის სიზუსტით (1 ციფრი ათწილად ნაწილში) და დაბეჭდეთ შედეგი.
 # გამოიყენეთ round, ceil, floor, trunc ფუნქციები სათითაოდ და შეამოწმეთ შედეგი თითოეულის გამოყენებით.
@@ -545,10 +545,10 @@
 # for i in range(1, 11):
 #     print(randint(1, 1000000000))
 #
-
-
+#
+#
 # homework 9
-
+#
 # 1. შექმენით ფუნქცია, რომელსაც არგუმენტად გადაეცემა ორი რიცხვი და დაითვლის (დააბრუნებს) მათ საშუალო არითმეტიკულს.
 # გამოიძახეთ ფუნქცია 3-ჯერ სხვადასხვა რიცხვებისთვის და დაბეჭდეთ შედეგი.
 # print()
@@ -687,8 +687,8 @@
 #
 # print(task8(int(input('input number:'))))
 #
-
-
+#
+#
 # homework 10
 # task 1
 #
@@ -775,7 +775,7 @@
 # text3 = input('input fruit >')
 #
 # #
-
+#
 # homework 12
 # 1. დაწერეთ პროგრამა, რომლის მეშვეობით შექმნით ფაილს იმავე დირექტორიაში (საქაღალდეში), ჩაწერეთ მასში ნებისმიერი ტექსტი და დახურეთ ფაილი.
 #
@@ -835,17 +835,17 @@
 #
 # file_object3.close()
 # file_object2.close()
-
-
+#
+#
 # Homeowrk done !
-
+#
 #
 #
 #
 #
 #
 # Homework 13
-
+#
 # 1. დაწერეთ პროგრამა, რომელის გაშვების შემდეგ კლავიატურიდან შეყვანილ ინფორმაციას ჩავწერთ data.txt
 # ფაილში ცალ-ცალკე ხაზზე. დავასრულოთ შეტანა 0-ით.
 #
@@ -1019,8 +1019,8 @@
 #         print('Wrong password.')
 # #
 # # Task done!
-
-
+#
+#
 # Homework
 #
 # 1. შექმენით ლისტი numbs ნებისმიერ 5 რიცხვითი მნიშვნელობით. იპოვეთ ამ რიცხვების ჯამი, მინიმალური, მაქსიმალური და საშუალო არითმეტიკული. ასევე შეასრულეთ შემდეგი ოპერაციები:
@@ -1028,39 +1028,208 @@
 # • სიის მესამე ელემენტად ჩასვით რიცხვი 205
 # • წაშალეთ სიის მე-4 ელემენტი
 # • დაალაგეთ სია ზრდადობის მიხედვით და დაბეჭდეთ
+#
+# print()
+# print('task 1')
+# print()
+#
+# result = 0
+#
+# numbs = [6, 8, 34, 23, 89]
+#
+# print(max(numbs), min(numbs))
+#
+# for i in numbs:
+#     result += i
+#
+# print(result)
+# print(result / 5)
+#
+# #  .1
+#
+# numbs.append(102)
+# print(numbs)
+#
+# #  .2
+#
+# numbs.insert(2, 205)
+# print(numbs)
+#
+# #  .3
+#
+# numbs.pop(3)
+# print(numbs)
+
+#  .4
+#
+#
+
+
+# Homework
+
+#
+# 1. შექმენით სია fruits, რომელის ელემენტებია: Watermelon, Banana, Apple.
+# დაალაგეთ ლისტის ელემენტები ალფაბეტის უკუ-მიმართულებით და დაბეჭდეთ ისინი.
+import random
 
 print()
 print('task 1')
 print()
 
-result = 0
+fruits = ['Watermelom', 'Banana', 'Apple']
+fruits.reverse()
+print(fruits)
 
-numbs = [6, 8, 34, 23, 89]
+#2. შექმენით ფაილი data_numbers.txt იმავე დირექტორიაში სადაც py ფაილია მოთავსებული,
+# ჩაწერთ მასში თქვენთვის სასურველ რიცხვები ცალ-ცალკე ხაზზე.
+# დაწერეთ პროგრამა, რომლის მეშვეობით წაიკითხავთ მონაცემებს
+# ფაილიდან და რიცხვებს მოათავსებთ ლისტის ელემენეტებად. წარმოადგინეთ
+# ლისტი რიცხვითი ელემენტების (და არა სტრიქონების) სახით.
+print()
+print('task 2')
+print()
 
-print(max(numbs), min(numbs))
+numb_list = []
 
-for i in numbs:
-    result += i
+with open('data_numbers.txt', 'a') as file_obj:
+    for i in range(0, int(input('input how many number you want:>'))):
+        file_obj.write(input('input number:>') + '\n')
 
-print(result)
-print(result / 5)
+with open('data_numbers.txt', 'r') as file_obj:
+    for i in file_obj:
+        numb_list.append(i[:-1])
 
-#  .1
+    print(numb_list)
 
-numbs.append(102)
-print(numbs)
 
-#  .2
+# 3. შექმენით ლისტი რიცხვითი ელემენტებით. shuffle ფუნქციის
+# გამოყენებით (random მოდულიდან) მოახდინეთ ლისტის ელემენტების შემთხვევითად არევა და დაბეჭდეთ მიღებული ლისტი.
+# (მითითება: ფუნქცია იწერება შემდეგნაირად: random.shuffle(x) სადაც x ლისტის დასახელებაა)
+print()
+print('task 3')
+print()
 
-numbs.insert(2, 205)
-print(numbs)
+my_list = [1, 2, 1, 2, 1, 2]
 
-#  .3
+random.shuffle(my_list)
 
-numbs.pop(3)
-print(numbs)
+print(my_list)
 
-#  .4
 
 #
+#
+# 4. შექმენით ლისტი რიცხვითი მნიშვნელობებით.
+# რანდმულად ამოარჩიეთ ლისტის რომელიმე ელემენტი და დაბეჭდეთ. (მითითება:
+# წინა სავარჯიშოს მსგავსად გამოიყენეთ random მოდულის choice ფუნქცია).
+#
+print()
+print('task 4')
+print()
+
+my_list = [11, 5, 24, 7, 9, 24]
+
+print(random.choice(my_list))
+
+
+#
+#
+# 5. დაწერეთ პროგრამა, რომელშიც შეიტანთ (input-ით) ნებისმიერ დიდ რიცხვს (მაგ. 342387410984).
+# იპოვეთ რიცხვის ციფრთა ჯამი. (მითითება: თავდაპირველად გარდაქმენით რიცხვი ლისტად)
+print()
+print('task 5')
+print()
+
+result = 0
+number = input('input number:>')
+numb_list = []
+
+for i in range(0, len(number)):
+    numb_list.append(number[i])
+
+for i in numb_list:
+    result += int(i)
+
+print(result)
+
+# 6. იპოვეთ ლისტში [1, 5, 23, 5, 12, 2, 5, 1, 18, 5] ყველაზე ხშირად განმეორებადი რიცხვი. დაბეჭდეთ შედეგი.
+# ასევე მიუთითეთ რამდენჯერ შეგხვდათ ლისტში ყველაზე ხშირად განმეორებადი რიცხვი.
+# print()
+# print('task 6')
+# print()
+
+# number = 0
+# count = 0
+# my_list = [1, 5, 23, 5, 12, 2, 5, 1, 18, 5]
+
+# for i in range(0, len(my_list)):
+
+
+# print(count)
+
+# 7. შექმენით ლისტი extensions = ['txt', 'jpg', 'gif', 'html'].
+# პროგრამის გაშვების შემდეგ მომხამრებელმა შეიყვანოს (input) ნებისმიერი ფაილის დასახელება.
+# თუ ფაილის გაფართოება ემთხევა ლისტის რომელიმე ელემენტს, დაბეჭდოს ეკრანზე “Yes”, წინააღმდეგ შემთხვავაში დაბეჭდოს “No”.
+
+print()
+print('task 7')
+print()
+
+extensions = ['txt', 'jpg', 'gif', 'html']
+
+file_name = input('input file name:>')
+
+result = ''
+
+for i in extensions:
+    if file_name[file_name.rfind('.')+1:] == i:
+        result = 'Yes'
+
+
+if result == '':
+    result = 'No'
+
+print(result)
+
+#
+# 8. სტრიქონი 'python php pascal javascript java c++' წარმოადგინეთ ლისტის სახით
+# (სტრიქონის თითოეული სიტყვა ლისტის თითოეული ელემენტად).
+# იპოვეთ ლისტის ყველაზე გრძელი ელემენტი (ანუ ყველაზე გრძელი სიტყვა).
+
+
+str = 'python php pascal javascript java c++ '
+text = ''
+programming = []
+
+for i in range(0, len(str)):
+    text += str[i]
+    if str[i] == ' ':
+        programming.append(text.strip())
+        text = ''
+
+
+print(programming)
+
+max_len = -1
+for i in programming:
+    if len(i) > max_len:
+        max_len = len(i)
+        res = i
+
+# printing result
+print("Maximum length string is : " + res)
+
+#
+#9. (ლისტების გამოყენებით) იხილეთ ატვირთული ფაილი oscars.txt,
+# რომელშიც მოცემულია ოსკაროსანი საუკეთესო ქალის და მამაკაცის შემსრულებელი მსახიობების სია
+# (შეასრულეთ დავალება სიების გამოყენებით).
+
+# ფაილის თითოეულ სტრიქონზე მოცემულია წელი, მსახიობის სქესი, ასაკი (ოსკარის აღების მომენტში),
+# მსახიობის სახელი გვარი და ფილმის დასახელება. აღნიშნული ველები ერთმანეთისგან გამოყოფილია მძიმით.
+# დაწერეთ პროგრამა, რომელიც იმუშავებს ამ ფაილთან და შეასრულებს შემდეგ დავალებებს:
+#
+# • მომხმარებელს შეაყვანინეთ წელი, იპოვეთ შეყვანილ წელს ოსკაროსნების სახელი გვარი და დაბეჭდეთ.
+# • დაბეჭდეთ იმ მსახიობის სახელი, გვარი და ასაკი, რომელმაც ყველაზე ახალგაზრდამ აიღო ოსკარი.
+
+Male = []
+Female = []
 
