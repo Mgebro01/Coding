@@ -1069,167 +1069,284 @@
 
 #
 # 1. შექმენით სია fruits, რომელის ელემენტებია: Watermelon, Banana, Apple.
-# დაალაგეთ ლისტის ელემენტები ალფაბეტის უკუ-მიმართულებით და დაბეჭდეთ ისინი.
-import random
+# # დაალაგეთ ლისტის ელემენტები ალფაბეტის უკუ-მიმართულებით და დაბეჭდეთ ისინი.
+# import random
+#
+# print()
+# print('task 1')
+# print()
+#
+# fruits = ['Watermelom', 'Apple', 'Banana']
+# fruits.sort(reverse=True)
+# print(fruits)
+#
+# #2. შექმენით ფაილი data_numbers.txt იმავე დირექტორიაში სადაც py ფაილია მოთავსებული,
+# # ჩაწერთ მასში თქვენთვის სასურველ რიცხვები ცალ-ცალკე ხაზზე.
+# # დაწერეთ პროგრამა, რომლის მეშვეობით წაიკითხავთ მონაცემებს
+# # ფაილიდან და რიცხვებს მოათავსებთ ლისტის ელემენეტებად. წარმოადგინეთ
+# # ლისტი რიცხვითი ელემენტების (და არა სტრიქონების) სახით.
+# print()
+# print('task 2')
+# print()
+#
+# numb_list = []
+#
+# with open('data_numbers.txt', 'w') as file_obj:
+#     for i in range(0, int(input('input how many number you want:>'))):
+#         file_obj.write(input('input number:>') + '\n')
+#
+# with open('data_numbers.txt', 'r') as file_obj:
+#     for i in file_obj:
+#         numb_list.append(int(i[:-1]))
+#
+#     print(numb_list)
+#
+#
+# # 3. შექმენით ლისტი რიცხვითი ელემენტებით. shuffle ფუნქციის
+# # გამოყენებით (random მოდულიდან) მოახდინეთ ლისტის ელემენტების შემთხვევითად არევა და დაბეჭდეთ მიღებული ლისტი.
+# # (მითითება: ფუნქცია იწერება შემდეგნაირად: random.shuffle(x) სადაც x ლისტის დასახელებაა)
+# print()
+# print('task 3')
+# print()
+#
+# my_list = [1, 2, 1, 2, 1, 2]
+#
+# random.shuffle(my_list)
+#
+# print(my_list)
+#
+# #
+# #
+# # 4. შექმენით ლისტი რიცხვითი მნიშვნელობებით.
+# # რანდმულად ამოარჩიეთ ლისტის რომელიმე ელემენტი და დაბეჭდეთ. (მითითება:
+# # წინა სავარჯიშოს მსგავსად გამოიყენეთ random მოდულის choice ფუნქცია).
+# #
+# print()
+# print('task 4')
+# print()
+#
+# my_list = [11, 5, 24, 7, 9, 24]
+#
+# print(random.choice(my_list))
+#
+#
+# #
+# #
+# # 5. დაწერეთ პროგრამა, რომელშიც შეიტანთ (input-ით) ნებისმიერ დიდ რიცხვს (მაგ. 342387410984).
+# # იპოვეთ რიცხვის ციფრთა ჯამი. (მითითება: თავდაპირველად გარდაქმენით რიცხვი ლისტად)
+# print()
+# print('task 5')
+# print()
+#
+# result = 0
+# number = input('input number:>')
+# numb_list = []
+#
+# for i in range(0, len(number)):
+#     numb_list.append(number[i])
+#
+# for i in numb_list:
+#     result += int(i)
+#
+# print(result)
+#
+# result = 0
+# number = input('input number:>')
+# numb_list = list(number)
+#
+# for i in numb_list:
+#     result += int(i)
+#
+# print(result)
+# # 6. იპოვეთ ლისტში [1, 5, 23, 5, 12, 2, 5, 1, 18, 5] ყველაზე ხშირად განმეორებადი რიცხვი. დაბეჭდეთ შედეგი.
+# # ასევე მიუთითეთ რამდენჯერ შეგხვდათ ლისტში ყველაზე ხშირად განმეორებადი რიცხვი.
+# # print()
+# # print('task 6')
+# # print()
+#
+# # number = 0
+# # count = 0
+# # my_list = [1, 5, 23, 5, 12, 2, 5, 1, 18, 5]
+#
+# # for i in range(0, len(my_list)):
+#
+#
+# # print(count)
+#
+# # 7. შექმენით ლისტი extensions = ['txt', 'jpg', 'gif', 'html'].
+# # პროგრამის გაშვების შემდეგ მომხამრებელმა შეიყვანოს (input) ნებისმიერი ფაილის დასახელება.
+# # თუ ფაილის გაფართოება ემთხევა ლისტის რომელიმე ელემენტს, დაბეჭდოს ეკრანზე “Yes”, წინააღმდეგ შემთხვავაში დაბეჭდოს “No”.
+#
+# print()
+# print('task 7')
+# print()
+#
+# extensions = ['txt', 'jpg', 'gif', 'html']
+#
+# file_name = input('input file name:>')
+#
+# result = ''
+#
+# for i in extensions:
+#     if file_name[file_name.rfind('.')+1:] == i:
+#         result = 'Yes'
+#
+#
+# if result == '':
+#     result = 'No'
+#
+# print(result)
+#
+# #
+# # 8. სტრიქონი 'python php pascal javascript java c++' წარმოადგინეთ ლისტის სახით
+# # (სტრიქონის თითოეული სიტყვა ლისტის თითოეული ელემენტად).
+# # იპოვეთ ლისტის ყველაზე გრძელი ელემენტი (ანუ ყველაზე გრძელი სიტყვა).
+#
+#
+# str = 'python php pascal javascript java c++ '
+# text = ''
+# programming = []
+#
+# for i in range(0, len(str)):
+#     text += str[i]
+#     if str[i] == ' ':
+#         programming.append(text.strip())
+#         text = ''
+#
+#
+# print(programming)
+#
+# max_len = -1
+# for i in programming:
+#     if len(i) > max_len:
+#         max_len = len(i)
+#         res = i
+#
+# # printing result
+# print("Maximum length string is : " + res)
+#
+# #
+# #9. (ლისტების გამოყენებით) იხილეთ ატვირთული ფაილი oscars.txt,
+# # რომელშიც მოცემულია ოსკაროსანი საუკეთესო ქალის და მამაკაცის შემსრულებელი მსახიობების სია
+# # (შეასრულეთ დავალება სიების გამოყენებით).
+#
+# # ფაილის თითოეულ სტრიქონზე მოცემულია წელი, მსახიობის სქესი, ასაკი (ოსკარის აღების მომენტში),
+# # მსახიობის სახელი გვარი და ფილმის დასახელება. აღნიშნული ველები ერთმანეთისგან გამოყოფილია მძიმით.
+# # დაწერეთ პროგრამა, რომელიც იმუშავებს ამ ფაილთან და შეასრულებს შემდეგ დავალებებს:
+# #
+# # • მომხმარებელს შეაყვანინეთ წელი, იპოვეთ შეყვანილ წელს ოსკაროსნების სახელი გვარი და დაბეჭდეთ.
+# # • დაბეჭდეთ იმ მსახიობის სახელი, გვარი და ასაკი, რომელმაც ყველაზე ახალგაზრდამ აიღო ოსკარი.
+#
+# oscars = []
+#
+# with open('oscars.txt', 'r') as f:
+#     for line in f:
+#         oscars.append(line[:-1].split(','))
+#
+# year = '2012'
+# for line in oscars:
+#     if year == line[0]:
+#         print(line[3])
+#
+# young = 100
+# youngest = ""
+#
+# for i in oscars:
+#     if int(year[2]) < young:
+#         young = int(year[2])
+#         youngest = year
+# print(youngest[3])
+# print(young)
+#
 
+# 1. შექმენით სიმრავლე შემდეგი ელემენტებით: 0, 1, 2, 3, 4. დაამატეთ ნებისმიერ 3
+# ელემენტი სურვილისამებრ. წაშალეთ ორი ელემენტი სიმრავლიდან.
+# დაბეჭდეთ სიმრავლის ელემენტები ცალცალკე ხაზზე (გამოიყენეთ for ციკლი). დაითვალეთ სიმრავლის ელემენტების რაოდენობა.
 print()
 print('task 1')
 print()
+count = 0
 
-fruits = ['Watermelom', 'Banana', 'Apple']
-fruits.reverse()
-print(fruits)
+my_set = {0, 1, 2, 3, 4}
 
-#2. შექმენით ფაილი data_numbers.txt იმავე დირექტორიაში სადაც py ფაილია მოთავსებული,
-# ჩაწერთ მასში თქვენთვის სასურველ რიცხვები ცალ-ცალკე ხაზზე.
-# დაწერეთ პროგრამა, რომლის მეშვეობით წაიკითხავთ მონაცემებს
-# ფაილიდან და რიცხვებს მოათავსებთ ლისტის ელემენეტებად. წარმოადგინეთ
-# ლისტი რიცხვითი ელემენტების (და არა სტრიქონების) სახით.
+print(my_set)
+
+my_set.add(5)
+my_set.add(6)
+print(my_set)
+
+my_set.remove(3)
+my_set.remove(4)
+print(my_set)
+
+
+for i in range(0, len(my_set)):
+    print(my_set.pop())
+    count += 1
+
+print('Count = ', count)
+
+
+
+# 2. შექმენით ორი სიმრავლე: set1 სიმრავლე ელემენტებით "green”, "blue”; set2 სიმრავლე ელემენტებით "blue", "yellow”.
+# იპოვეთ ამ ორი სიმრავლის გაერთიანება, თანაკვეთა, სხვაობა და სიმეტრიული სხვაობა (შეასრულეთ დავალება ორი გზით:
+# არსებული მეთოდით (ფუნქციით) და შესაბამისი ოპერატორით.)
+
 print()
 print('task 2')
 print()
 
-numb_list = []
+set1 = {'green', 'blue'}
+set2 = {'blue', 'yellow'}
 
-with open('data_numbers.txt', 'a') as file_obj:
-    for i in range(0, int(input('input how many number you want:>'))):
-        file_obj.write(input('input number:>') + '\n')
+# print(set1.union(set2))
+print(set1 | set2)
 
-with open('data_numbers.txt', 'r') as file_obj:
-    for i in file_obj:
-        numb_list.append(i[:-1])
+# print(set1.intersection(set2))
+print(set1 & set2)
 
-    print(numb_list)
+# print(set1.difference(set2))
+print(set1 - set2)
+# print(set2.difference(set1))
+print(set2 - set1)
 
+# print(set1.symmetric_difference(set2))
+print(set1 ^ set2)
 
-# 3. შექმენით ლისტი რიცხვითი ელემენტებით. shuffle ფუნქციის
-# გამოყენებით (random მოდულიდან) მოახდინეთ ლისტის ელემენტების შემთხვევითად არევა და დაბეჭდეთ მიღებული ლისტი.
-# (მითითება: ფუნქცია იწერება შემდეგნაირად: random.shuffle(x) სადაც x ლისტის დასახელებაა)
+#3. დაწერეთ პროგრამა რომელიც იპოვის სიმრავლეში
+# მაქსიმალურ და მინიმალურ მნიშვნელობას და დაბეჭდეთ შედეგი (სიმრავლე შეარჩიეთ სურვილისამებრ).
 print()
 print('task 3')
 print()
 
-my_list = [1, 2, 1, 2, 1, 2]
+my_set = {1, 4, 84, 345, 2, 653}
 
-random.shuffle(my_list)
+print(min(my_set))
+print(max(my_set))
 
-print(my_list)
-
-
-#
-#
-# 4. შექმენით ლისტი რიცხვითი მნიშვნელობებით.
-# რანდმულად ამოარჩიეთ ლისტის რომელიმე ელემენტი და დაბეჭდეთ. (მითითება:
-# წინა სავარჯიშოს მსგავსად გამოიყენეთ random მოდულის choice ფუნქცია).
-#
+#4. დაწერეთ პროგრამა, სადაც მომხმარებელს შეყვანინებთ ნებისმიერ სტრიქონს
+# . დაბეჭდეთ სტრიქონში გამოყენებული ყველა სიმბოლო გამეორებების გარეშე (გამოიყენეთ set).
 print()
 print('task 4')
 print()
 
-my_list = [11, 5, 24, 7, 9, 24]
+result = ''
 
-print(random.choice(my_list))
+word = input('input str:>')
+my_set = set(word)
+print(my_set)
 
+for i in range(0, len(my_set)):
+    result += my_set.pop()
+print(result)
 
-#
-#
-# 5. დაწერეთ პროგრამა, რომელშიც შეიტანთ (input-ით) ნებისმიერ დიდ რიცხვს (მაგ. 342387410984).
-# იპოვეთ რიცხვის ციფრთა ჯამი. (მითითება: თავდაპირველად გარდაქმენით რიცხვი ლისტად)
+#5. მომხარებელს შეაყვანინეთ 2 სიტყვა. დაბეჭდეთ ამ ორი სიტყვის ყველა საერთო ასო.
 print()
 print('task 5')
 print()
 
-result = 0
-number = input('input number:>')
-numb_list = []
+set1 = set(input('input word:>'))
 
-for i in range(0, len(number)):
-    numb_list.append(number[i])
+set2 = set(input('input word:>'))
 
-for i in numb_list:
-    result += int(i)
-
-print(result)
-
-# 6. იპოვეთ ლისტში [1, 5, 23, 5, 12, 2, 5, 1, 18, 5] ყველაზე ხშირად განმეორებადი რიცხვი. დაბეჭდეთ შედეგი.
-# ასევე მიუთითეთ რამდენჯერ შეგხვდათ ლისტში ყველაზე ხშირად განმეორებადი რიცხვი.
-# print()
-# print('task 6')
-# print()
-
-# number = 0
-# count = 0
-# my_list = [1, 5, 23, 5, 12, 2, 5, 1, 18, 5]
-
-# for i in range(0, len(my_list)):
-
-
-# print(count)
-
-# 7. შექმენით ლისტი extensions = ['txt', 'jpg', 'gif', 'html'].
-# პროგრამის გაშვების შემდეგ მომხამრებელმა შეიყვანოს (input) ნებისმიერი ფაილის დასახელება.
-# თუ ფაილის გაფართოება ემთხევა ლისტის რომელიმე ელემენტს, დაბეჭდოს ეკრანზე “Yes”, წინააღმდეგ შემთხვავაში დაბეჭდოს “No”.
-
-print()
-print('task 7')
-print()
-
-extensions = ['txt', 'jpg', 'gif', 'html']
-
-file_name = input('input file name:>')
-
-result = ''
-
-for i in extensions:
-    if file_name[file_name.rfind('.')+1:] == i:
-        result = 'Yes'
-
-
-if result == '':
-    result = 'No'
-
-print(result)
-
-#
-# 8. სტრიქონი 'python php pascal javascript java c++' წარმოადგინეთ ლისტის სახით
-# (სტრიქონის თითოეული სიტყვა ლისტის თითოეული ელემენტად).
-# იპოვეთ ლისტის ყველაზე გრძელი ელემენტი (ანუ ყველაზე გრძელი სიტყვა).
-
-
-str = 'python php pascal javascript java c++ '
-text = ''
-programming = []
-
-for i in range(0, len(str)):
-    text += str[i]
-    if str[i] == ' ':
-        programming.append(text.strip())
-        text = ''
-
-
-print(programming)
-
-max_len = -1
-for i in programming:
-    if len(i) > max_len:
-        max_len = len(i)
-        res = i
-
-# printing result
-print("Maximum length string is : " + res)
-
-#
-#9. (ლისტების გამოყენებით) იხილეთ ატვირთული ფაილი oscars.txt,
-# რომელშიც მოცემულია ოსკაროსანი საუკეთესო ქალის და მამაკაცის შემსრულებელი მსახიობების სია
-# (შეასრულეთ დავალება სიების გამოყენებით).
-
-# ფაილის თითოეულ სტრიქონზე მოცემულია წელი, მსახიობის სქესი, ასაკი (ოსკარის აღების მომენტში),
-# მსახიობის სახელი გვარი და ფილმის დასახელება. აღნიშნული ველები ერთმანეთისგან გამოყოფილია მძიმით.
-# დაწერეთ პროგრამა, რომელიც იმუშავებს ამ ფაილთან და შეასრულებს შემდეგ დავალებებს:
-#
-# • მომხმარებელს შეაყვანინეთ წელი, იპოვეთ შეყვანილ წელს ოსკაროსნების სახელი გვარი და დაბეჭდეთ.
-# • დაბეჭდეთ იმ მსახიობის სახელი, გვარი და ასაკი, რომელმაც ყველაზე ახალგაზრდამ აიღო ოსკარი.
-
-Male = []
-Female = []
-
+print(set1.intersection(set2))
