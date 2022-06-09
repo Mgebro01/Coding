@@ -1262,91 +1262,122 @@
 # 1. შექმენით სიმრავლე შემდეგი ელემენტებით: 0, 1, 2, 3, 4. დაამატეთ ნებისმიერ 3
 # ელემენტი სურვილისამებრ. წაშალეთ ორი ელემენტი სიმრავლიდან.
 # დაბეჭდეთ სიმრავლის ელემენტები ცალცალკე ხაზზე (გამოიყენეთ for ციკლი). დაითვალეთ სიმრავლის ელემენტების რაოდენობა.
-print()
-print('task 1')
-print()
-count = 0
-
-my_set = {0, 1, 2, 3, 4}
-
-print(my_set)
-
-my_set.add(5)
-my_set.add(6)
-print(my_set)
-
-my_set.remove(3)
-my_set.remove(4)
-print(my_set)
-
-
-for i in range(0, len(my_set)):
-    print(my_set.pop())
-    count += 1
-
-print('Count = ', count)
-
-
-
-# 2. შექმენით ორი სიმრავლე: set1 სიმრავლე ელემენტებით "green”, "blue”; set2 სიმრავლე ელემენტებით "blue", "yellow”.
-# იპოვეთ ამ ორი სიმრავლის გაერთიანება, თანაკვეთა, სხვაობა და სიმეტრიული სხვაობა (შეასრულეთ დავალება ორი გზით:
-# არსებული მეთოდით (ფუნქციით) და შესაბამისი ოპერატორით.)
-
-print()
-print('task 2')
-print()
-
-set1 = {'green', 'blue'}
-set2 = {'blue', 'yellow'}
-
-# print(set1.union(set2))
-print(set1 | set2)
-
+# print()
+# print('task 1')
+# print()
+# count = 0
+#
+# my_set = {0, 1, 2, 3, 4}
+#
+# print(my_set)
+#
+# my_set.add(5)
+# my_set.add(6)
+# print(my_set)
+#
+# my_set.remove(3)
+# my_set.remove(4)
+# print(my_set)
+#
+#
+# for i in my_set:
+#     print(i)
+#     count += 1
+#
+# print('Count = ', count)
+#
+#
+#
+# # 2. შექმენით ორი სიმრავლე: set1 სიმრავლე ელემენტებით "green”, "blue”; set2 სიმრავლე ელემენტებით "blue", "yellow”.
+# # იპოვეთ ამ ორი სიმრავლის გაერთიანება, თანაკვეთა, სხვაობა და სიმეტრიული სხვაობა (შეასრულეთ დავალება ორი გზით:
+# # არსებული მეთოდით (ფუნქციით) და შესაბამისი ოპერატორით.)
+#
+# print()
+# print('task 2')
+# print()
+#
+# set1 = {'green', 'blue'}
+# set2 = {'blue', 'yellow'}
+#
+# # print(set1.union(set2))
+# print(set1 | set2)
+#
+# # print(set1.intersection(set2))
+# print(set1 & set2)
+#
+# # print(set1.difference(set2))
+# print(set1 - set2)
+# # print(set2.difference(set1))
+# print(set2 - set1)
+#
+# # print(set1.symmetric_difference(set2))
+# print(set1 ^ set2)
+#
+# #3. დაწერეთ პროგრამა რომელიც იპოვის სიმრავლეში
+# # მაქსიმალურ და მინიმალურ მნიშვნელობას და დაბეჭდეთ შედეგი (სიმრავლე შეარჩიეთ სურვილისამებრ).
+# print()
+# print('task 3')
+# print()
+#
+# my_set = {1, 4, 84, 345, 2, 653}
+#
+# print(min(my_set))
+# print(max(my_set))
+#
+# #4. დაწერეთ პროგრამა, სადაც მომხმარებელს შეყვანინებთ ნებისმიერ სტრიქონს
+# # . დაბეჭდეთ სტრიქონში გამოყენებული ყველა სიმბოლო გამეორებების გარეშე (გამოიყენეთ set).
+# print()
+# print('task 4')
+# print()
+#
+# result = ''
+#
+# word = input('input str:>')
+# my_set = set(word)
+# print(my_set)
+#
+# print(', '.join(my_set))
+#
+# # for i in my_set:
+# #     result += f'{i}'
+# # print(result)
+#
+# #5. მომხარებელს შეაყვანინეთ 2 სიტყვა. დაბეჭდეთ ამ ორი სიტყვის ყველა საერთო ასო.
+# print()
+# print('task 5')
+# print()
+#
+# set1 = set(input('input word:>'))
+#
+# set2 = set(input('input word:>'))
+#
 # print(set1.intersection(set2))
-print(set1 & set2)
 
-# print(set1.difference(set2))
-print(set1 - set2)
-# print(set2.difference(set1))
-print(set2 - set1)
 
-# print(set1.symmetric_difference(set2))
-print(set1 ^ set2)
+# Homework
 
-#3. დაწერეთ პროგრამა რომელიც იპოვის სიმრავლეში
-# მაქსიმალურ და მინიმალურ მნიშვნელობას და დაბეჭდეთ შედეგი (სიმრავლე შეარჩიეთ სურვილისამებრ).
-print()
-print('task 3')
-print()
+from random import randint
 
-my_set = {1, 4, 84, 345, 2, 653}
 
-print(min(my_set))
-print(max(my_set))
+My_Dictionary = {'N1': randint(1, 1000), 'N2': randint(1, 1000), 'N3': randint(1, 1000)}
 
-#4. დაწერეთ პროგრამა, სადაც მომხმარებელს შეყვანინებთ ნებისმიერ სტრიქონს
-# . დაბეჭდეთ სტრიქონში გამოყენებული ყველა სიმბოლო გამეორებების გარეშე (გამოიყენეთ set).
-print()
-print('task 4')
-print()
+print('აგდებს ლექსიკონის ბოლო ელემენტს და პრინტავს თაფლის სახით')
 
-result = ''
+print(My_Dictionary)
+print(My_Dictionary.popitem())
+print(My_Dictionary)
 
-word = input('input str:>')
-my_set = set(word)
-print(my_set)
 
-for i in range(0, len(my_set)):
-    result += my_set.pop()
-print(result)
+print('ამატებს ელემენტს ბოლო ადგილზე')
 
-#5. მომხარებელს შეაყვანინეთ 2 სიტყვა. დაბეჭდეთ ამ ორი სიტყვის ყველა საერთო ასო.
-print()
-print('task 5')
-print()
+My_Dictionary.update({'N3': randint(1, 1000)})
+print(My_Dictionary)
 
-set1 = set(input('input word:>'))
+print('პრინტავს ისეთ სახელს რომელიც მინიმალური მნიშვნელობისაა')
+print(min(My_Dictionary))
 
-set2 = set(input('input word:>'))
+print('პრინტავს ისეთ სახელს რომელიც მინიმალური მნიშვნელობისაა')
+print(max(My_Dictionary))
 
-print(set1.intersection(set2))
+
+

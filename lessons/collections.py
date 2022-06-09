@@ -23,3 +23,17 @@
 # my_set = {1, 2, 3, 4, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
 #
 # print(type(my_set), my_set)
+#
+#
+# result = ''
+#
+# w1, w2 = 'gamarjoba', 'gagimarjos'
+#
+# for i in w1:
+#     for f in w2:
+#         if i == f and i not in result:
+#             result += i
+#
+# print(result)
+
+
