@@ -1358,7 +1358,7 @@
 
 from random import randint
 
-
+randint(1, 1000)
 My_Dictionary = {'N1': randint(1, 1000), 'N2': randint(1, 1000), 'N3': randint(1, 1000)}
 
 print('აგდებს ლექსიკონის ბოლო ელემენტს და პრინტავს თაფლის სახით')
@@ -1383,7 +1383,6 @@ print(max(My_Dictionary))
 print('პრინტავს ყველა ელემენტის ღირებულებას')
 print(My_Dictionary.values())
 
-print('გვიპრინტავ გადაცემულ ელმენტს ღიგენულებას')
+print('გვიპრინტავს გადაცემული ელმენტის ღირებულებას')
 print(My_Dictionary.setdefault('N1'))
-
 
