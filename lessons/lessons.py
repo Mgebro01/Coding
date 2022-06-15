@@ -431,4 +431,46 @@
 # print(my_list)
 #
 #
+
+# get გვაწვდის გადაცემული ელემენტის მნივნელობას
+
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+}
+
+print(car.get("brand"))
+
+# ასევე აბრუნებს არარსებული ელემნტის მნიშველობას
+
+x = car.get("price", 423)
+
+print(x)
+
+#clear არ აბრუნბს არაფერს უბრალოდ აცარიელებს (წმენდს) ''ლექსიკონს''
+
+print(car.clear())
+print(car)
+
+# update ამატებს ბოლო ადგილზე შეყვანილ ცვ
+
+marks = {'Physics':67, 'Maths':87}
+internal_marks = {'Practical':48}
+
+marks.update(internal_marks)
+
+
+print(marks)
 #
+#
+#
+xmovani = 'aAeEiIoOuU'
+
+my_dict = {'a': 1, 'b': 2, 'c': 3, 'u': 5}
+# print(my_dict.items())
+
+
+for key, value in my_dict.items():
+    if key in xmovani:
+      print(key, value)
