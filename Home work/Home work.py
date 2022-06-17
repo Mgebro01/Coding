@@ -1532,7 +1532,7 @@ def morse_to_text(text):
         for i in morse:
             let, mor = i.split('\t')
             morse_dict[mor[:-1]] = let
-        print(morse_dict)
+
 
 
 
