@@ -1508,7 +1508,7 @@ print()
 
 def text_to_morse(text):
     morse_dict = {' ': '|'}
-    with open("morsecode.txt", "r") as morse:
+    with open("../lessons/morsecode.txt", "r") as morse:
         for i in morse:
             let, mor = i.split('\t')
             morse_dict[let] = mor[:-1]
@@ -1528,7 +1528,7 @@ def morse_to_text(text):
     morse_dict = {'|': ' '}
 
     morse_dict[' '] = ''
-    with open("morsecode.txt", "r") as morse:
+    with open("../lessons/morsecode.txt", "r") as morse:
         for i in morse:
             let, mor = i.split('\t')
             morse_dict[mor[:-1]] = let
@@ -1549,7 +1549,7 @@ def morse_to_text(text):
 Question_1 = input('what you want, morse to text or text to morse:>')
 
 if Question_1 == 'morse to text':
-    print(morse_to_text(input('input morse code')))
+    print(morse_to_text(input('input morse code:')))
 
 if Question_1 == 'text to morse':
-    print(text_to_morse(input('input text')))
+    print(text_to_morse(input('input text:')))
