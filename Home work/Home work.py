@@ -1508,7 +1508,7 @@ print()
 
 def text_to_morse(text):
     morse_dict = {' ': '|'}
-    with open("../lessons/morsecode.txt", "r") as morse:
+    with open("../morse/morsecode.txt", "r") as morse:
         for i in morse:
             let, mor = i.split('\t')
             morse_dict[let] = mor[:-1]
@@ -1528,7 +1528,7 @@ def morse_to_text(text):
     morse_dict = {'|': ' '}
 
     morse_dict[' '] = ''
-    with open("../lessons/morsecode.txt", "r") as morse:
+    with open("../morse/morsecode.txt", "r") as morse:
         for i in morse:
             let, mor = i.split('\t')
             morse_dict[mor[:-1]] = let
