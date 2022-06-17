@@ -433,44 +433,69 @@
 #
 
 # get გვაწვდის გადაცემული ელემენტის მნივნელობას
-
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964,
-}
-
-print(car.get("brand"))
-
-# ასევე აბრუნებს არარსებული ელემნტის მნიშველობას
-
-x = car.get("price", 423)
-
-print(x)
-
-#clear არ აბრუნბს არაფერს უბრალოდ აცარიელებს (წმენდს) ''ლექსიკონს''
-
-print(car.clear())
-print(car)
-
-# update ამატებს ბოლო ადგილზე შეყვანილ ცვ
-
-marks = {'Physics':67, 'Maths':87}
-internal_marks = {'Practical':48}
-
-marks.update(internal_marks)
-
-
-print(marks)
+#
+# car = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964,
+# }
+#
+# print(car.get("brand"))
+#
+# # ასევე აბრუნებს არარსებული ელემნტის მნიშველობას
+#
+# x = car.get("price", 423)
+#
+# print(x)
+#
+# #clear არ აბრუნბს არაფერს უბრალოდ აცარიელებს (წმენდს) ''ლექსიკონს''
+#
+# print(car.clear())
+# print(car)
+#
+# # update ამატებს ბოლო ადგილზე შეყვანილ ცვ
+#
+# marks = {'Physics':67, 'Maths':87}
+# internal_marks = {'Practical':48}
+#
+# marks.update(internal_marks)
 #
 #
+# print(marks)
+# #
+# #
+# #
+# xmovani = 'aAeEiIoOuU'
 #
-xmovani = 'aAeEiIoOuU'
+# my_dict = {'a': 1, 'b': 2, 'c': 3, 'u': 5}
+# # print(my_dict.items())
+#
+#
+# for key, value in my_dict.items():
+#     if key in xmovani:
+#       print(key, value)
 
-my_dict = {'a': 1, 'b': 2, 'c': 3, 'u': 5}
-# print(my_dict.items())
+# შექმენით ცარიელი ლექსიკონი და დაამატეთ ელემენტები ფოტოზე მითითებული გამოსახულების მიხედვით.
+# დაბეჭდეთ აღწერილი ადამიანის სახელი, გვარი,
+# ასაკი და შვილების სახელები.
+# (თავიდან ლექსიკონი ცარიელია და მერე თქვენ ამატებთ ფუნქციებით item ებს)
 
 
-for key, value in my_dict.items():
-    if key in xmovani:
-      print(key, value)
+my_dict = {}
+
+my_dict['firstname'] = "Jane"
+my_dict['lastname'] = "Doe"
+my_dict['hobbys'] = []
+my_dict['age'] = 35
+my_dict['children'] = []
+my_dict['hobbys'].append("running")
+my_dict['hobbys'].append("singing")
+my_dict['hobbys'].append("sky diving")
+my_dict["children"].append({})
+my_dict["children"].append({})
+my_dict["children"][0]["firstname"] = "Alice"
+my_dict["children"][0]["age"] = 6
+my_dict["children"][1]["firstname"] = "Bob"
+my_dict["children"][1]["age"] = 8
+
+print(my_dict)

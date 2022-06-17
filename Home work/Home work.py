@@ -1394,22 +1394,22 @@
 # 1. შექმენით ლექსიკონი: {0: 10, 1: 20}. დაამატეთ 2 ახალი ელემენტი და დაბეჭდეთ მიღებული ლექსიკონი.
 # (გამოიყენეთ update მეთოდიც). წაშალეთ რომელიმე ელემენტი.
 
-print()
-print('task 1')
-print()
-
-from random import randint
-
-my_dict = {0: 10, 1: 20}
-
-my_add = {2: 30, 3: 40}
-
-my_dict.update(my_add)
-
-print(my_dict)
-
-my_dict.pop(randint(0, 3))
-print(my_dict)
+# print()
+# print('task 1')
+# print()
+#
+# from random import randint
+#
+# my_dict = {0: 10, 1: 20}
+#
+# my_add = {2: 30, 3: 40}
+#
+# my_dict.update(my_add)
+#
+# print(my_dict)
+#
+# my_dict.pop(randint(0, 3))
+# print(my_dict)
 
 #
 #
@@ -1417,62 +1417,62 @@ print(my_dict)
 # dic1={1:10, 2:20}
 # dic2={3:30, 4:40}
 # dic3={5:50, 6:60}
-
-print()
-print('task 2')
-print()
-
-dic1 = {1:10, 2:20}
-dic2 = {3:30, 4:40}
-dic3 = {5:50, 6:60}
-
-dic1.update(dic2)
-dic1.update(dic3)
-
-print(dic1)
-
+#
+# print()
+# print('task 2')
+# print()
+#
+# dic1 = {1: 10, 2: 20}
+# dic2 = {3: 30, 4: 40}
+# dic3 = {5: 50, 6: 60}
+#
+# dic1.update(dic2)
+# dic1.update(dic3)
+#
+# print(dic1)
+#
+# #
+# #
+# # 3. დაწერეთ პროგრამა რომელიც შეამოწმებს რომელიმე key (გასაღები) არის თუ არა ლექსიკონში:
+# # d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60} და დაბეჭდეთ შესაბამისი შეტობინება. (მითითება: გამოიყენეთ in ოპერატორი).
+# print()
+# print('task 3')
+# print()
+#
+# number = int(input("input number:>"))
+#
+# d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+#
+# print(number in d)
+#
+# # 4. მოცემულია ლექსიკონი d = {'x': 10, 'y': 20, 'z': 30}
+# # დაბეჭდეთ თითოეული ელემენტის key და value შემდეგნაირად (მითითება: გამოიყენეთ for ციკლი):
+# # x -> 10
+# # y -> 20
+# # z -> 30
+# print()
+# print('task 4')
+# print()
+#
+# d = {'x': 10, 'y': 20, 'z': 30}
+#
+# for i in d:
+#     print(i, '->', d[i])
+#
+# # 5. დაწერეთ პროგრამა, რომელიც შექმნის შემდეგი სახის ლექსიკონს
+# # (key არის 1-დან 10-მდე რიცხვები, ხოლო value- მათი კუბები). დაბეჭდეთ მიღებული ლექსიკონი.
+# print()
+# print('task 5')
+# print()
+#
+# my_dict = {}
 #
 #
-# 3. დაწერეთ პროგრამა რომელიც შეამოწმებს რომელიმე key (გასაღები) არის თუ არა ლექსიკონში:
-# d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60} და დაბეჭდეთ შესაბამისი შეტობინება. (მითითება: გამოიყენეთ in ოპერატორი).
-print()
-print('task 3')
-print()
-
-d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
-
-number = int(input("input number:>"))
-
-print(number in d)
-
-# 4. მოცემულია ლექსიკონი d = {'x': 10, 'y': 20, 'z': 30}
-# დაბეჭდეთ თითოეული ელემენტის key და value შემდეგნაირად (მითითება: გამოიყენეთ for ციკლი):
-# x -> 10
-# y -> 20
-# z -> 30
-print()
-print('task 4')
-print()
-
-d = {'x': 10, 'y': 20, 'z': 30}
-
-for i in d:
-    print(i, '->', d[i])
-
-# 5. დაწერეთ პროგრამა, რომელიც შექმნის შემდეგი სახის ლექსიკონს
-# (key არის 1-დან 10-მდე რიცხვები, ხოლო value- მათი კუბები). დაბეჭდეთ მიღებული ლექსიკონი.
-print()
-print('task 5')
-print()
-
-my_dict = {}
-
-
-for i in range(1, 11):
-    i2 = {i: i ** 3}
-    my_dict.update(i2)
-
-print(my_dict)
+# for i in range(1, 11):
+#     i2 = {i: i ** 3}
+#     my_dict.update(i2)
+#
+# print(my_dict)
 
 # 6. შექმენით ცარიელი ლექსიკონი და დაამატეთ ელემენტები ფოტოზე მითითებული გამოსახულების მიხედვით.
 # დაბეჭდეთ აღწერილი ადამიანის სახელი, გვარი,
@@ -1496,18 +1496,60 @@ print()
 print('task 7')
 print()
 
-n = 0
-result = ''
 
-with open('morsecode.txt', 'r') as file_obj:
 
-    word = input('input words:')
-    for i in file_obj:
-        if word[n] == str(i[1]):
-            if word[n] == ' ':
-                result += '|'
-                result += str(i[5:-1], ' ')
-                n += 1
-                continue
 
-print(result)
+
+
+#Homework
+
+
+
+
+def text_to_morse(text):
+    morse_dict = {' ': '|'}
+    with open("morsecode.txt", "r") as morse:
+        for i in morse:
+            let, mor = i.split('\t')
+            morse_dict[let] = mor[:-1]
+
+    result = ''
+    for i in text.upper():
+        result += f'{morse_dict[i]} '
+
+    return result
+
+print(text_to_morse("niku .3"))
+
+#--------------------------
+
+
+def morse_to_text(text):
+    morse_dict = {'|': ' '}
+
+    morse_dict[' '] = ''
+    with open("morsecode.txt", "r") as morse:
+        for i in morse:
+            let, mor = i.split('\t')
+            morse_dict[mor[:-1]] = let
+        print(morse_dict)
+
+
+
+    result = ''
+    text_list = []
+    text_list = text.split()
+
+    for i in text_list:
+        result += f'{morse_dict[i]}'
+
+    return result
+
+
+Question_1 = input('what you want, morse to text or text to morse')
+
+if Question_1 == 'morse to text':
+    print(morse_to_text(input('input morse code')))
+
+if Question_1 == 'text to morse':
+    print(text_to_morse(input('input morse code')))
