@@ -1546,10 +1546,10 @@ def morse_to_text(text):
     return result
 
 
-Question_1 = input('what you want, morse to text or text to morse')
+Question_1 = input('what you want, morse to text or text to morse:>')
 
 if Question_1 == 'morse to text':
     print(morse_to_text(input('input morse code')))
 
 if Question_1 == 'text to morse':
-    print(text_to_morse(input('input morse code')))
+    print(text_to_morse(input('input text')))
