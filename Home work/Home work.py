@@ -1519,7 +1519,7 @@ def text_to_morse(text):
 
     return result
 
-print(text_to_morse("niku .3"))
+
 
 #--------------------------
 
