@@ -1492,64 +1492,161 @@
 # კოდი ერთმანეთს დააშორეთ space-ით. ხოლო სიტყვებს
 # შორის ჩასვით გამყოფი ხაზი | . პროგრამის წერისას გამოიყენეთ ლექსიკონი.
 
+# print()
+# print('task 7')
+# print()
+#
+#
+#
+#
+#
+#
+# #Homework
+#
+#
+#
+#
+# def text_to_morse(text):
+#     morse_dict = {' ': '|'}
+#     with open("../morse/morsecode.txt", "r") as morse:
+#         for i in morse:
+#             let, mor = i.split('\t')
+#             morse_dict[let] = mor[:-1]
+#
+#     result = ''
+#     for i in text.upper():
+#         result += f'{morse_dict[i]} '
+#
+#     return result
+#
+#
+#
+# #--------------------------
+#
+#
+# def morse_to_text(text):
+#     morse_dict = {'|': ' '}
+#
+#     morse_dict[' '] = ''
+#     with open("../morse/morsecode.txt", "r") as morse:
+#         for i in morse:
+#             let, mor = i.split('\t')
+#             morse_dict[mor[:-1]] = let
+#
+#
+#
+#
+#     result = ''
+#     text_list = []
+#     text_list = text.split()
+#
+#     for i in text_list:
+#         result += f'{morse_dict[i]}'
+#
+#     return result
+#
+#
+# Question_1 = input('what you want, morse to text or text to morse:>')
+#
+# if Question_1 == 'morse to text':
+#     print(morse_to_text(input('input morse code:')))
+#
+# if Question_1 == 'text to morse':
+#     print(text_to_morse(input('input text:')))
+
+
+#
+#
+#HOMEWORK
+# Errors
+#
+#1. დაწერეთ პროგრამა, სადაც მომხარებელს შემოაყვანინებთ 2 რიცხვს.
+# დაბეჭდეთ პირველი რიცხვის მეორეზე გაყოფის შედეგი. გაითვალისწინეთ შეცდომის მოხდენის შემთხვევები,
+# თუ მომხარებელი არასწორ მონაცემებს შემოიყვანს, გამოუტანოს შესაბამისი შეტყობინება და ხელახლა მისცეს
+# შესაძლებლობა რომ კიდევ შემოიტანოს რიცხვები.
+# პროგრამა დასრულდეს მხოლოდ მაშინ, თუ მომხმარებელი ვალიდურ მონაცემებს შემოიტანს.
+
+
 print()
-print('task 7')
+print('Task1')
+print()
+
+error1 = 0
+i = True
+
+while i == True:
+    try:
+        error1 = 0
+        numb_1 = int(input('input number:>'))
+        numb_2 = int(input('input number:>'))
+        res = numb_1 / numb_2
+        print(res)
+    except ValueError:
+        print('input only numbers')
+        error1 += 1
+        continue
+    except ZeroDivisionError:
+        print('Cannot division at zero ')
+        error1 += 1
+        continue
+    if error1 == 0:
+        i = False
+
+#
+#2. დაწერეთ ფუნქცია, რომელსაც პარამეტრად გადაეცემა ორი რიცხვი.
+# თუ პირველი რიცხვი იყოფა მეორეზე, ფუნქციამ დააბრუნოს განაყოფი.
+# ხოლო თუ შეცდომა ფიქსირდება, ფუნქციამ დააბრუნოს შესაბამისი მნიშვნელობა.
+# გამოიძახეთ ფუნქცია ნებისმიერი რიცხვებისთვის და შეამოწმეთ თქვენი პროგრამის სისწორე.
+# მითითება: try..except ბლოკი უნდა ჩაწეროთ ფუნქციის აღწერაში.
+print()
+print('Task2')
 print()
 
 
 
+def My_errors(a, b):
+    try:
+        c = a / b
+        return c
+    except ValueError:
+        return 'input only numbers'
 
+    except ZeroDivisionError:
+        return 'Cannot division at zero'
+    except TypeError:
+        return 'input only int'
 
+print(My_errors(5, 21))
 
-#Homework
+#
+#
+#
+#3. დაწერეთ პროგრამა, სადაც გაითვალისწინებთ IndexError შეცდომას.
 
+print()
+print('Task3')
+print()
 
+try:
+    my_list = [1, 2, 4, 6, 62]
+    print(my_list[int(input('input index:'))])
 
+except ValueError:
+    print('input only int')
+except IndexError:
+    print('input right index')
 
-def text_to_morse(text):
-    morse_dict = {' ': '|'}
-    with open("../morse/morsecode.txt", "r") as morse:
-        for i in morse:
-            let, mor = i.split('\t')
-            morse_dict[let] = mor[:-1]
+#
+#4. გახსენით myresult.txt ფაილი წაკითხვის რეჟიმში. თუ ფაილი არ არსებობს მოხდება შეცდომა.
+# გაითვალისწინეთ შეცდომის სახელი და დაწერეთ შესაბამისი შეტყობინება შეცდომის შესახებ (try except-ის მეშვეობით).
+#
+print()
+print('Task4')
+print()
 
-    result = ''
-    for i in text.upper():
-        result += f'{morse_dict[i]} '
+try:
+    file_obj = open('myresult.txt', 'r')
+    print(file_obj.read())
 
-    return result
-
-
-
-#--------------------------
-
-
-def morse_to_text(text):
-    morse_dict = {'|': ' '}
-
-    morse_dict[' '] = ''
-    with open("../morse/morsecode.txt", "r") as morse:
-        for i in morse:
-            let, mor = i.split('\t')
-            morse_dict[mor[:-1]] = let
-
-
-
-
-    result = ''
-    text_list = []
-    text_list = text.split()
-
-    for i in text_list:
-        result += f'{morse_dict[i]}'
-
-    return result
-
-
-Question_1 = input('what you want, morse to text or text to morse:>')
-
-if Question_1 == 'morse to text':
-    print(morse_to_text(input('input morse code:')))
-
-if Question_1 == 'text to morse':
-    print(text_to_morse(input('input text:')))
+except FileNotFoundError:
+    print('first create a file called myresult.txt')
